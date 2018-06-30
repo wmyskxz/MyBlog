@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8"/>
+    <title>wmyskxz个人博客</title>
+
+    <!-- 引入 JQ 和 Bootstrap -->
+    <script src="js/jquery/2.0.0/jquery.min.js"></script>
+    <link href="css/bootstrap/3.3.6/bootstrap.min.css" rel="stylesheet">
+    <script src="js/bootstrap/3.3.6/bootstrap.min.js"></script>
+    <!--引入文章css-->
+    <link href="css/article.css" rel="stylesheet">
+    <!-- 引入Prism代码高亮CSS -->
+    <link href="css/prism/prism.css" rel="stylesheet"/>
+</head>
+
+<body>
+<!--引入头部-->
+<script language="javascript" type="text/javascript" src="js/header.js"></script>
+
+<div id="content">
+    <!--返回按钮-->
+    <div id="backBtn">
+        <label onclick="history.go(-1)"><span class="glyphicon glyphicon-chevron-left"></span> Get Back</label>
+    </div>
+
+    <!--文章标题-->
+    <div>
+        <h1 id="articleTitle">这里是文章的标题</h1>
+    </div>
+    <!--文章创建时间-->
+    <div>
+        <h5 id="articleCreateBy">时间：这里是文章创建时间</h5>
+    </div>
+    <!--文章题图-->
+    <div class="articlePicture">
+        <img id="articlePicture" src=""/>
+    </div>
+    <!--文章内容-->
+    <div id="articleContent" style="clear: both;">
+
+    </div>
+
+    <!--评论列表-->
+    <div style="margin-top: 60px;">
+        <label>评论列表：</label>
+    </div>
+    <div id="commentList" class="commentList">
+    </div>
+
+    <!--新增评论评论-->
+    <div class="comments">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                新增评论
+            </div>
+            <div class="panel-body">
+                <label>名称：</label>
+                <input id="commentName" class="form-control"/>
+                <label>Email：</label>
+                <input id="commentEmail" class="form-control">
+                <label>评论内容：</label>
+                <textarea id="commentContent" rows="3" class="form-control"></textarea><br/>
+                <div class="text-right">
+                    <button id="addComment" class="btn btn-success">确认添加</button>
+                </div>
+
+            </div>
+        </div>
+        <!-- /. END PANEL -->
+    </div>
+    <!-- /. END COMMENTS -->
+
+
+    <!-- 提示不能为空信息MODAL -->
+    <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+         aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header alert-success">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">温馨提示：</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <label>名称和评论内容不能为空！同时希望您能留下您宝贵的Email地址供我们联系！</label>
+                        </div>
+                    </div>
+                    <!-- /. END RWO -->
+                </div>
+                <!-- /. END MODAL BODY -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">我知道了</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- /. END MODAL -->
+
+    <!-- 添加成功提示信息MODAL -->
+    <div class="modal fade" id="addModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+         aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header alert-success">
+                    <h4 class="modal-title">系统提示：</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <label>添加成功！</label>
+                        </div>
+                    </div>
+                    <!-- /. END RWO -->
+                </div>
+                <!-- /. END MODAL BODY -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" id="addConfirmBtn">感谢支持</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- /. END MODAL -->
+
+</div>
+<!-- 引入尾部 -->
+<script language="javascript" type="text/javascript" src="js/footer.js"></script>
+</body>
+<!-- 引入Prism.JS：代码高亮插件 -->
+<script src="js/prism/prism.js"></script>
+<!-- 引入自己的JS -->
+<script src="js/article.js"></script>
+
+</html>

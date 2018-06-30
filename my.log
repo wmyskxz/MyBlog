@@ -1,0 +1,737 @@
+2018-06-20 18:33:52.383  INFO 15768 --- [restartedMain] cn.wmyskxz.blog.BlogApplication          : Starting BlogApplication on SC-201801031345 with PID 15768 (F:\Projects\JavaProject\blog\target\classes started by Administrator in F:\Projects\JavaProject\blog)
+2018-06-20 18:33:52.386  INFO 15768 --- [restartedMain] cn.wmyskxz.blog.BlogApplication          : No active profile set, falling back to default profiles: default
+2018-06-20 18:33:52.509  INFO 15768 --- [restartedMain] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@4cb5ec4a: startup date [Wed Jun 20 18:33:52 CST 2018]; root of context hierarchy
+2018-06-20 18:33:56.895  INFO 15768 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$e9690409] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-06-20 18:33:57.732  INFO 15768 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2018-06-20 18:33:57.774  INFO 15768 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-06-20 18:33:57.775  INFO 15768 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.31
+2018-06-20 18:33:57.805  INFO 15768 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_144\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Java\jdk1.8.0_144\\bin;%JAVA_HONE%\jre\bin;D:\Program Files\Git\cmd;C:\Program Files\TortoiseSVN\bin;C:\Users\Administrator\AppData\Local\Programs\Python\Python36\Scripts\;C:\Users\Administrator\AppData\Local\Programs\Python\Python36\;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;.]
+2018-06-20 18:33:58.036  INFO 15768 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-06-20 18:33:58.037  INFO 15768 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 5528 ms
+2018-06-20 18:33:58.376  INFO 15768 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2018-06-20 18:33:58.378  INFO 15768 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet statViewServlet mapped to [/druid/*]
+2018-06-20 18:33:58.383  INFO 15768 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-06-20 18:33:58.383  INFO 15768 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-06-20 18:33:58.383  INFO 15768 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-06-20 18:33:58.384  INFO 15768 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-06-20 18:33:58.384  INFO 15768 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webStatFilter' to urls: [/*]
+2018-06-20 18:33:58.532  INFO 15768 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2018-06-20 18:33:59.379  INFO 15768 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2018-06-20 18:34:00.519  INFO 15768 --- [restartedMain] o.s.aop.framework.CglibAopProxy          : Method [java.util.List springfox.documentation.schema.property.OptimizedModelPropertiesProvider.candidateProperties(com.fasterxml.classmate.ResolvedType,com.fasterxml.jackson.databind.introspect.AnnotatedMember,com.fasterxml.jackson.databind.introspect.BeanPropertyDefinition,springfox.documentation.spi.schema.contexts.ModelContext)] is package-visible across different ClassLoaders and cannot get proxied via CGLIB: Declare this method as public or protected if you need to support invocations through the proxy.
+2018-06-20 18:34:00.837  INFO 15768 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/article/],methods=[POST]}" onto public java.lang.String cn.wmyskxz.blog.controller.BackController.addArticle(cn.wmyskxz.blog.dto.ArticleDto)
+2018-06-20 18:34:00.839  INFO 15768 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/category],methods=[POST]}" onto public java.lang.String cn.wmyskxz.blog.controller.BackController.addCategoryInfo(cn.wmyskxz.blog.entity.CategoryInfo)
+2018-06-20 18:34:00.840  INFO 15768 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/article/{id}],methods=[PUT]}" onto public java.lang.String cn.wmyskxz.blog.controller.BackController.updateArticle(java.lang.Long,cn.wmyskxz.blog.dto.ArticleDto)
+2018-06-20 18:34:00.841  INFO 15768 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/article/{id}],methods=[DELETE]}" onto public java.lang.String cn.wmyskxz.blog.controller.BackController.deleteArticle(java.lang.Long)
+2018-06-20 18:34:00.841  INFO 15768 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/comment/{id}],methods=[DELETE]}" onto public java.lang.String cn.wmyskxz.blog.controller.BackController.deleteComment(java.lang.Long)
+2018-06-20 18:34:00.842  INFO 15768 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/category/{id}],methods=[GET]}" onto public cn.wmyskxz.blog.entity.CategoryInfo cn.wmyskxz.blog.controller.BackController.getCategoryInfo(java.lang.Long)
+2018-06-20 18:34:00.843  INFO 15768 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/comment/reply/{id}],methods=[GET]}" onto public java.lang.String cn.wmyskxz.blog.controller.BackController.replyComment(java.lang.Long)
+2018-06-20 18:34:00.843  INFO 15768 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/{id}],methods=[GET]}" onto public cn.wmyskxz.blog.entity.Comment cn.wmyskxz.blog.controller.BackController.getCommentById(java.lang.Long)
+2018-06-20 18:34:00.844  INFO 15768 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/category/{id}],methods=[DELETE]}" onto public java.lang.String cn.wmyskxz.blog.controller.BackController.deleteCategoryInfo(java.lang.Long)
+2018-06-20 18:34:00.845  INFO 15768 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/comment/article/{id}],methods=[DELETE]}" onto public java.lang.String cn.wmyskxz.blog.controller.BackController.deleteArticleComment(java.lang.Long)
+2018-06-20 18:34:00.845  INFO 15768 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/article/sort/{id}],methods=[PUT]}" onto public java.lang.String cn.wmyskxz.blog.controller.BackController.changeArticleCategory(java.lang.Long,java.lang.Long)
+2018-06-20 18:34:00.846  INFO 15768 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/article/picture/{id}],methods=[PUT]}" onto public java.lang.String cn.wmyskxz.blog.controller.BackController.updateArticlePicture(java.lang.Long,java.lang.String)
+2018-06-20 18:34:00.847  INFO 15768 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/category/{id}],methods=[PUT]}" onto public java.lang.String cn.wmyskxz.blog.controller.BackController.updateCategoryInfo(java.lang.Long,cn.wmyskxz.blog.entity.CategoryInfo)
+2018-06-20 18:34:00.852  INFO 15768 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/comment],methods=[POST]}" onto public java.lang.String cn.wmyskxz.blog.controller.ForeController.addMessage(cn.wmyskxz.blog.entity.Comment,javax.servlet.http.HttpServletRequest)
+2018-06-20 18:34:00.853  INFO 15768 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/article/{id}],methods=[GET]}" onto public cn.wmyskxz.blog.dto.ArticleDto cn.wmyskxz.blog.controller.ForeController.getArticleById(java.lang.Long)
+2018-06-20 18:34:00.854  INFO 15768 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/comment/list],methods=[GET]}" onto public java.util.List<cn.wmyskxz.blog.entity.Comment> cn.wmyskxz.blog.controller.ForeController.listAllComment()
+2018-06-20 18:34:00.854  INFO 15768 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/article/list/sort/{id}],methods=[GET]}" onto public java.util.List<cn.wmyskxz.blog.dto.ArticleWithPictureDto> cn.wmyskxz.blog.controller.ForeController.listArticleInfo(java.lang.Long)
+2018-06-20 18:34:00.855  INFO 15768 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/category/list],methods=[GET]}" onto public java.util.List<cn.wmyskxz.blog.entity.CategoryInfo> cn.wmyskxz.blog.controller.ForeController.listAllCategoryInfo()
+2018-06-20 18:34:00.856  INFO 15768 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/article/list],methods=[GET]}" onto public java.util.List<cn.wmyskxz.blog.dto.ArticleWithPictureDto> cn.wmyskxz.blog.controller.ForeController.listAllArticleInfo()
+2018-06-20 18:34:00.857  INFO 15768 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/article/list/lastest],methods=[GET]}" onto public java.util.List<cn.wmyskxz.blog.dto.ArticleWithPictureDto> cn.wmyskxz.blog.controller.ForeController.listLastestArticle()
+2018-06-20 18:34:00.857  INFO 15768 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/comment/article/{id}],methods=[GET]}" onto public java.util.List<cn.wmyskxz.blog.dto.ArticleCommentDto> cn.wmyskxz.blog.controller.ForeController.listMessageByArticleId(java.lang.Long)
+2018-06-20 18:34:00.858  INFO 15768 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/comment/article/{id}],methods=[POST]}" onto public java.lang.String cn.wmyskxz.blog.controller.ForeController.addArticleComment(java.lang.Long,cn.wmyskxz.blog.dto.ArticleCommentDto,javax.servlet.http.HttpServletRequest)
+2018-06-20 18:34:00.860  INFO 15768 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/v2/api-docs],methods=[GET]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String)
+2018-06-20 18:34:00.866  INFO 15768 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2018-06-20 18:34:00.867  INFO 15768 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2018-06-20 18:34:00.868  INFO 15768 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2018-06-20 18:34:00.873  INFO 15768 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-06-20 18:34:00.875  INFO 15768 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-06-20 18:34:01.246  INFO 15768 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-20 18:34:01.651  INFO 15768 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@4cb5ec4a: startup date [Wed Jun 20 18:33:52 CST 2018]; root of context hierarchy
+2018-06-20 18:34:01.759  INFO 15768 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-20 18:34:01.760  INFO 15768 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-20 18:34:02.606  INFO 15768 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2018-06-20 18:34:02.680  INFO 15768 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-06-20 18:34:02.684  INFO 15768 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'statFilter' has been autodetected for JMX exposure
+2018-06-20 18:34:02.684  INFO 15768 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-06-20 18:34:02.697  INFO 15768 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.spring.boot.autoconfigure:name=dataSource,type=DruidDataSourceWrapper]
+2018-06-20 18:34:02.702  INFO 15768 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'statFilter': registering with JMX server as MBean [com.alibaba.druid.filter.stat:name=statFilter,type=StatFilter]
+2018-06-20 18:34:02.735  INFO 15768 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2018-06-20 18:34:02.803  INFO 15768 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found {0} custom documentation plugin(s)
+2018-06-20 18:34:02.882  INFO 15768 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2018-06-20 18:34:02.892  INFO 15768 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method addArticle was back-controller
+2018-06-20 18:34:02.898  INFO 15768 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: addArticle belongs to groups: [[ResourceGroup{groupName='back-controller', position=0, controller=cn.wmyskxz.blog.controller.BackController}]] 
+2018-06-20 18:34:02.905  INFO 15768 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method updateArticlePicture was back-controller
+2018-06-20 18:34:02.906  INFO 15768 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: updateArticlePicture belongs to groups: [[ResourceGroup{groupName='back-controller', position=0, controller=cn.wmyskxz.blog.controller.BackController}]] 
+2018-06-20 18:34:02.907  INFO 15768 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method changeArticleCategory was back-controller
+2018-06-20 18:34:02.907  INFO 15768 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: changeArticleCategory belongs to groups: [[ResourceGroup{groupName='back-controller', position=0, controller=cn.wmyskxz.blog.controller.BackController}]] 
+2018-06-20 18:34:02.908  INFO 15768 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method updateArticle was back-controller
+2018-06-20 18:34:02.908  INFO 15768 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: updateArticle belongs to groups: [[ResourceGroup{groupName='back-controller', position=0, controller=cn.wmyskxz.blog.controller.BackController}]] 
+2018-06-20 18:34:02.909  INFO 15768 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method deleteArticle was back-controller
+2018-06-20 18:34:02.909  INFO 15768 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: deleteArticle belongs to groups: [[ResourceGroup{groupName='back-controller', position=0, controller=cn.wmyskxz.blog.controller.BackController}]] 
+2018-06-20 18:34:02.910  INFO 15768 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method getCategoryInfo was back-controller
+2018-06-20 18:34:02.911  INFO 15768 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: getCategoryInfo belongs to groups: [[ResourceGroup{groupName='back-controller', position=0, controller=cn.wmyskxz.blog.controller.BackController}]] 
+2018-06-20 18:34:02.912  INFO 15768 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method deleteCategoryInfo was back-controller
+2018-06-20 18:34:02.912  INFO 15768 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: deleteCategoryInfo belongs to groups: [[ResourceGroup{groupName='back-controller', position=0, controller=cn.wmyskxz.blog.controller.BackController}]] 
+2018-06-20 18:34:02.913  INFO 15768 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method updateCategoryInfo was back-controller
+2018-06-20 18:34:02.945  INFO 15768 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: updateCategoryInfo belongs to groups: [[ResourceGroup{groupName='back-controller', position=0, controller=cn.wmyskxz.blog.controller.BackController}]] 
+2018-06-20 18:34:02.946  INFO 15768 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method addCategoryInfo was back-controller
+2018-06-20 18:34:02.946  INFO 15768 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: addCategoryInfo belongs to groups: [[ResourceGroup{groupName='back-controller', position=0, controller=cn.wmyskxz.blog.controller.BackController}]] 
+2018-06-20 18:34:02.946  INFO 15768 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method deleteArticleComment was back-controller
+2018-06-20 18:34:02.947  INFO 15768 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: deleteArticleComment belongs to groups: [[ResourceGroup{groupName='back-controller', position=0, controller=cn.wmyskxz.blog.controller.BackController}]] 
+2018-06-20 18:34:02.948  INFO 15768 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method replyComment was back-controller
+2018-06-20 18:34:02.949  INFO 15768 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: replyComment belongs to groups: [[ResourceGroup{groupName='back-controller', position=0, controller=cn.wmyskxz.blog.controller.BackController}]] 
+2018-06-20 18:34:02.949  INFO 15768 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method deleteComment was back-controller
+2018-06-20 18:34:02.950  INFO 15768 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: deleteComment belongs to groups: [[ResourceGroup{groupName='back-controller', position=0, controller=cn.wmyskxz.blog.controller.BackController}]] 
+2018-06-20 18:34:02.950  INFO 15768 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method getCommentById was back-controller
+2018-06-20 18:34:02.951  INFO 15768 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: getCommentById belongs to groups: [[ResourceGroup{groupName='back-controller', position=0, controller=cn.wmyskxz.blog.controller.BackController}]] 
+2018-06-20 18:34:02.951  INFO 15768 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method listLastestArticle was fore-controller
+2018-06-20 18:34:02.952  INFO 15768 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: listLastestArticle belongs to groups: [[ResourceGroup{groupName='fore-controller', position=0, controller=cn.wmyskxz.blog.controller.ForeController}]] 
+2018-06-20 18:34:02.952  INFO 15768 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method listArticleInfo was fore-controller
+2018-06-20 18:34:02.953  INFO 15768 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: listArticleInfo belongs to groups: [[ResourceGroup{groupName='fore-controller', position=0, controller=cn.wmyskxz.blog.controller.ForeController}]] 
+2018-06-20 18:34:02.954  INFO 15768 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method listAllArticleInfo was fore-controller
+2018-06-20 18:34:02.955  INFO 15768 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: listAllArticleInfo belongs to groups: [[ResourceGroup{groupName='fore-controller', position=0, controller=cn.wmyskxz.blog.controller.ForeController}]] 
+2018-06-20 18:34:02.955  INFO 15768 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method getArticleById was fore-controller
+2018-06-20 18:34:02.955  INFO 15768 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: getArticleById belongs to groups: [[ResourceGroup{groupName='fore-controller', position=0, controller=cn.wmyskxz.blog.controller.ForeController}]] 
+2018-06-20 18:34:02.956  INFO 15768 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method listAllCategoryInfo was fore-controller
+2018-06-20 18:34:02.956  INFO 15768 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: listAllCategoryInfo belongs to groups: [[ResourceGroup{groupName='fore-controller', position=0, controller=cn.wmyskxz.blog.controller.ForeController}]] 
+2018-06-20 18:34:02.957  INFO 15768 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method listMessageByArticleId was fore-controller
+2018-06-20 18:34:02.957  INFO 15768 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: listMessageByArticleId belongs to groups: [[ResourceGroup{groupName='fore-controller', position=0, controller=cn.wmyskxz.blog.controller.ForeController}]] 
+2018-06-20 18:34:02.957  INFO 15768 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method addArticleComment was fore-controller
+2018-06-20 18:34:02.958  INFO 15768 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: addArticleComment belongs to groups: [[ResourceGroup{groupName='fore-controller', position=0, controller=cn.wmyskxz.blog.controller.ForeController}]] 
+2018-06-20 18:34:02.958  INFO 15768 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method listAllComment was fore-controller
+2018-06-20 18:34:02.958  INFO 15768 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: listAllComment belongs to groups: [[ResourceGroup{groupName='fore-controller', position=0, controller=cn.wmyskxz.blog.controller.ForeController}]] 
+2018-06-20 18:34:02.959  INFO 15768 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method addMessage was fore-controller
+2018-06-20 18:34:02.959  INFO 15768 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: addMessage belongs to groups: [[ResourceGroup{groupName='fore-controller', position=0, controller=cn.wmyskxz.blog.controller.ForeController}]] 
+2018-06-20 18:34:02.967  INFO 15768 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Created resource listing Path: /default/back-controller Description: back-controller Position: 0
+2018-06-20 18:34:02.969  INFO 15768 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Created resource listing Path: /default/fore-controller Description: fore-controller Position: 0
+2018-06-20 18:34:03.024  INFO 15768 --- [restartedMain] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: cn.wmyskxz.blog.dto.ArticleDto(false)
+2018-06-20 18:34:03.024  INFO 15768 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache models with key cn.wmyskxz.blog.dto.ArticleDto(false)
+2018-06-20 18:34:03.035  INFO 15768 --- [restartedMain] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: cn.wmyskxz.blog.dto.ArticleDto(false)
+2018-06-20 18:34:03.037  INFO 15768 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelProperties with key cn.wmyskxz.blog.dto.ArticleDto(false)
+2018-06-20 18:34:03.119  INFO 15768 --- [restartedMain] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: cn.wmyskxz.blog.dto.ArticleDto(false)
+2018-06-20 18:34:03.119  INFO 15768 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelDependencies with key cn.wmyskxz.blog.dto.ArticleDto(false)
+2018-06-20 18:34:03.126  INFO 15768 --- [restartedMain] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: cn.wmyskxz.blog.dto.ArticleDto(false)
+2018-06-20 18:34:03.126  INFO 15768 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelProperties with key cn.wmyskxz.blog.dto.ArticleDto(false)
+2018-06-20 18:34:03.130  INFO 15768 --- [restartedMain] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.lang.String(true)
+2018-06-20 18:34:03.130  INFO 15768 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache models with key java.lang.String(true)
+2018-06-20 18:34:03.131  INFO 15768 --- [restartedMain] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.lang.String(true)
+2018-06-20 18:34:03.131  INFO 15768 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelDependencies with key java.lang.String(true)
+2018-06-20 18:34:03.133  INFO 15768 --- [restartedMain] s.d.spring.web.OperationsKeyGenerator    : Cache key generated: /admin/article/.cn.wmyskxz.blog.controller.BackController.addArticle.DefaultGenericTypeNamingStrategy
+2018-06-20 18:34:03.133  INFO 15768 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache operations with key /admin/article/.cn.wmyskxz.blog.controller.BackController.addArticle.DefaultGenericTypeNamingStrategy
+2018-06-20 18:34:03.214  INFO 15768 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method addArticle was back-controller
+2018-06-20 18:34:03.281  INFO 15768 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method addArticle was back-controller
+2018-06-20 18:34:03.301  INFO 15768 --- [restartedMain] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: cn.wmyskxz.blog.entity.CategoryInfo(false)
+2018-06-20 18:34:03.301  INFO 15768 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache models with key cn.wmyskxz.blog.entity.CategoryInfo(false)
+2018-06-20 18:34:03.301  INFO 15768 --- [restartedMain] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: cn.wmyskxz.blog.entity.CategoryInfo(false)
+2018-06-20 18:34:03.302  INFO 15768 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelProperties with key cn.wmyskxz.blog.entity.CategoryInfo(false)
+2018-06-20 18:34:03.308  INFO 15768 --- [restartedMain] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: cn.wmyskxz.blog.entity.CategoryInfo(false)
+2018-06-20 18:34:03.308  INFO 15768 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelDependencies with key cn.wmyskxz.blog.entity.CategoryInfo(false)
+2018-06-20 18:34:03.309  INFO 15768 --- [restartedMain] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: cn.wmyskxz.blog.entity.CategoryInfo(false)
+2018-06-20 18:34:03.309  INFO 15768 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelProperties with key cn.wmyskxz.blog.entity.CategoryInfo(false)
+2018-06-20 18:34:03.309  INFO 15768 --- [restartedMain] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.lang.String(true)
+2018-06-20 18:34:03.310  INFO 15768 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache models with key java.lang.String(true)
+2018-06-20 18:34:03.310  INFO 15768 --- [restartedMain] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.lang.String(true)
+2018-06-20 18:34:03.310  INFO 15768 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelDependencies with key java.lang.String(true)
+2018-06-20 18:34:03.310  INFO 15768 --- [restartedMain] s.d.spring.web.OperationsKeyGenerator    : Cache key generated: /admin/category.cn.wmyskxz.blog.controller.BackController.addCategoryInfo.DefaultGenericTypeNamingStrategy
+2018-06-20 18:34:03.311  INFO 15768 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache operations with key /admin/category.cn.wmyskxz.blog.controller.BackController.addCategoryInfo.DefaultGenericTypeNamingStrategy
+2018-06-20 18:34:03.319  INFO 15768 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method addCategoryInfo was back-controller
+2018-06-20 18:34:03.322  INFO 15768 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method addCategoryInfo was back-controller
+2018-06-20 18:34:03.328  INFO 15768 --- [restartedMain] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.lang.String(true)
+2018-06-20 18:34:03.329  INFO 15768 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache models with key java.lang.String(true)
+2018-06-20 18:34:03.329  INFO 15768 --- [restartedMain] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.lang.String(true)
+2018-06-20 18:34:03.329  INFO 15768 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelDependencies with key java.lang.String(true)
+2018-06-20 18:34:03.329  INFO 15768 --- [restartedMain] s.d.spring.web.OperationsKeyGenerator    : Cache key generated: /admin/article/sort/{id}.cn.wmyskxz.blog.controller.BackController.changeArticleCategory.DefaultGenericTypeNamingStrategy
+2018-06-20 18:34:03.329  INFO 15768 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache operations with key /admin/article/sort/{id}.cn.wmyskxz.blog.controller.BackController.changeArticleCategory.DefaultGenericTypeNamingStrategy
+2018-06-20 18:34:03.335  INFO 15768 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method changeArticleCategory was back-controller
+2018-06-20 18:34:03.338  INFO 15768 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method changeArticleCategory was back-controller
+2018-06-20 18:34:03.342  INFO 15768 --- [restartedMain] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.lang.String(true)
+2018-06-20 18:34:03.342  INFO 15768 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache models with key java.lang.String(true)
+2018-06-20 18:34:03.342  INFO 15768 --- [restartedMain] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.lang.String(true)
+2018-06-20 18:34:03.342  INFO 15768 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelDependencies with key java.lang.String(true)
+2018-06-20 18:34:03.342  INFO 15768 --- [restartedMain] s.d.spring.web.OperationsKeyGenerator    : Cache key generated: /admin/article/{id}.cn.wmyskxz.blog.controller.BackController.deleteArticle.DefaultGenericTypeNamingStrategy
+2018-06-20 18:34:03.343  INFO 15768 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache operations with key /admin/article/{id}.cn.wmyskxz.blog.controller.BackController.deleteArticle.DefaultGenericTypeNamingStrategy
+2018-06-20 18:34:03.347  INFO 15768 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method deleteArticle was back-controller
+2018-06-20 18:34:03.349  INFO 15768 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method deleteArticle was back-controller
+2018-06-20 18:34:03.356  INFO 15768 --- [restartedMain] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.lang.String(true)
+2018-06-20 18:34:03.357  INFO 15768 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache models with key java.lang.String(true)
+2018-06-20 18:34:03.357  INFO 15768 --- [restartedMain] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.lang.String(true)
+2018-06-20 18:34:03.357  INFO 15768 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelDependencies with key java.lang.String(true)
+2018-06-20 18:34:03.358  INFO 15768 --- [restartedMain] s.d.spring.web.OperationsKeyGenerator    : Cache key generated: /admin/comment/article/{id}.cn.wmyskxz.blog.controller.BackController.deleteArticleComment.DefaultGenericTypeNamingStrategy
+2018-06-20 18:34:03.358  INFO 15768 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache operations with key /admin/comment/article/{id}.cn.wmyskxz.blog.controller.BackController.deleteArticleComment.DefaultGenericTypeNamingStrategy
+2018-06-20 18:34:03.361  INFO 15768 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method deleteArticleComment was back-controller
+2018-06-20 18:34:03.363  INFO 15768 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method deleteArticleComment was back-controller
+2018-06-20 18:34:03.382  INFO 15768 --- [restartedMain] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.lang.String(true)
+2018-06-20 18:34:03.383  INFO 15768 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache models with key java.lang.String(true)
+2018-06-20 18:34:03.384  INFO 15768 --- [restartedMain] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.lang.String(true)
+2018-06-20 18:34:03.384  INFO 15768 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelDependencies with key java.lang.String(true)
+2018-06-20 18:34:03.394  INFO 15768 --- [restartedMain] s.d.spring.web.OperationsKeyGenerator    : Cache key generated: /admin/category/{id}.cn.wmyskxz.blog.controller.BackController.deleteCategoryInfo.DefaultGenericTypeNamingStrategy
+2018-06-20 18:34:03.394  INFO 15768 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache operations with key /admin/category/{id}.cn.wmyskxz.blog.controller.BackController.deleteCategoryInfo.DefaultGenericTypeNamingStrategy
+2018-06-20 18:34:03.397  INFO 15768 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method deleteCategoryInfo was back-controller
+2018-06-20 18:34:03.401  INFO 15768 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method deleteCategoryInfo was back-controller
+2018-06-20 18:34:03.405  INFO 15768 --- [restartedMain] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.lang.String(true)
+2018-06-20 18:34:03.406  INFO 15768 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache models with key java.lang.String(true)
+2018-06-20 18:34:03.407  INFO 15768 --- [restartedMain] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.lang.String(true)
+2018-06-20 18:34:03.407  INFO 15768 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelDependencies with key java.lang.String(true)
+2018-06-20 18:34:03.408  INFO 15768 --- [restartedMain] s.d.spring.web.OperationsKeyGenerator    : Cache key generated: /admin/comment/{id}.cn.wmyskxz.blog.controller.BackController.deleteComment.DefaultGenericTypeNamingStrategy
+2018-06-20 18:34:03.408  INFO 15768 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache operations with key /admin/comment/{id}.cn.wmyskxz.blog.controller.BackController.deleteComment.DefaultGenericTypeNamingStrategy
+2018-06-20 18:34:03.411  INFO 15768 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method deleteComment was back-controller
+2018-06-20 18:34:03.415  INFO 15768 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method deleteComment was back-controller
+2018-06-20 18:34:03.423  INFO 15768 --- [restartedMain] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: cn.wmyskxz.blog.entity.CategoryInfo(true)
+2018-06-20 18:34:03.423  INFO 15768 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache models with key cn.wmyskxz.blog.entity.CategoryInfo(true)
+2018-06-20 18:34:03.424  INFO 15768 --- [restartedMain] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: cn.wmyskxz.blog.entity.CategoryInfo(true)
+2018-06-20 18:34:03.424  INFO 15768 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelProperties with key cn.wmyskxz.blog.entity.CategoryInfo(true)
+2018-06-20 18:34:03.428  INFO 15768 --- [restartedMain] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: cn.wmyskxz.blog.entity.CategoryInfo(true)
+2018-06-20 18:34:03.428  INFO 15768 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelDependencies with key cn.wmyskxz.blog.entity.CategoryInfo(true)
+2018-06-20 18:34:03.428  INFO 15768 --- [restartedMain] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: cn.wmyskxz.blog.entity.CategoryInfo(true)
+2018-06-20 18:34:03.429  INFO 15768 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelProperties with key cn.wmyskxz.blog.entity.CategoryInfo(true)
+2018-06-20 18:34:03.429  INFO 15768 --- [restartedMain] s.d.spring.web.OperationsKeyGenerator    : Cache key generated: /admin/category/{id}.cn.wmyskxz.blog.controller.BackController.getCategoryInfo.DefaultGenericTypeNamingStrategy
+2018-06-20 18:34:03.429  INFO 15768 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache operations with key /admin/category/{id}.cn.wmyskxz.blog.controller.BackController.getCategoryInfo.DefaultGenericTypeNamingStrategy
+2018-06-20 18:34:03.432  INFO 15768 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method getCategoryInfo was back-controller
+2018-06-20 18:34:03.434  INFO 15768 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method getCategoryInfo was back-controller
+2018-06-20 18:34:03.439  INFO 15768 --- [restartedMain] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: cn.wmyskxz.blog.entity.Comment(true)
+2018-06-20 18:34:03.439  INFO 15768 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache models with key cn.wmyskxz.blog.entity.Comment(true)
+2018-06-20 18:34:03.439  INFO 15768 --- [restartedMain] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: cn.wmyskxz.blog.entity.Comment(true)
+2018-06-20 18:34:03.439  INFO 15768 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelProperties with key cn.wmyskxz.blog.entity.Comment(true)
+2018-06-20 18:34:03.443  INFO 15768 --- [restartedMain] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: cn.wmyskxz.blog.entity.Comment(true)
+2018-06-20 18:34:03.444  INFO 15768 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelDependencies with key cn.wmyskxz.blog.entity.Comment(true)
+2018-06-20 18:34:03.445  INFO 15768 --- [restartedMain] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: cn.wmyskxz.blog.entity.Comment(true)
+2018-06-20 18:34:03.445  INFO 15768 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelProperties with key cn.wmyskxz.blog.entity.Comment(true)
+2018-06-20 18:34:03.445  INFO 15768 --- [restartedMain] s.d.spring.web.OperationsKeyGenerator    : Cache key generated: /admin/{id}.cn.wmyskxz.blog.controller.BackController.getCommentById.DefaultGenericTypeNamingStrategy
+2018-06-20 18:34:03.445  INFO 15768 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache operations with key /admin/{id}.cn.wmyskxz.blog.controller.BackController.getCommentById.DefaultGenericTypeNamingStrategy
+2018-06-20 18:34:03.449  INFO 15768 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method getCommentById was back-controller
+2018-06-20 18:34:03.452  INFO 15768 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method getCommentById was back-controller
+2018-06-20 18:34:03.456  INFO 15768 --- [restartedMain] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.lang.String(true)
+2018-06-20 18:34:03.457  INFO 15768 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache models with key java.lang.String(true)
+2018-06-20 18:34:03.457  INFO 15768 --- [restartedMain] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.lang.String(true)
+2018-06-20 18:34:03.457  INFO 15768 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelDependencies with key java.lang.String(true)
+2018-06-20 18:34:03.457  INFO 15768 --- [restartedMain] s.d.spring.web.OperationsKeyGenerator    : Cache key generated: /admin/comment/reply/{id}.cn.wmyskxz.blog.controller.BackController.replyComment.DefaultGenericTypeNamingStrategy
+2018-06-20 18:34:03.457  INFO 15768 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache operations with key /admin/comment/reply/{id}.cn.wmyskxz.blog.controller.BackController.replyComment.DefaultGenericTypeNamingStrategy
+2018-06-20 18:34:03.461  INFO 15768 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method replyComment was back-controller
+2018-06-20 18:34:03.464  INFO 15768 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method replyComment was back-controller
+2018-06-20 18:34:03.470  INFO 15768 --- [restartedMain] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: cn.wmyskxz.blog.dto.ArticleDto(false)
+2018-06-20 18:34:03.470  INFO 15768 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache models with key cn.wmyskxz.blog.dto.ArticleDto(false)
+2018-06-20 18:34:03.470  INFO 15768 --- [restartedMain] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: cn.wmyskxz.blog.dto.ArticleDto(false)
+2018-06-20 18:34:03.471  INFO 15768 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelDependencies with key cn.wmyskxz.blog.dto.ArticleDto(false)
+2018-06-20 18:34:03.471  INFO 15768 --- [restartedMain] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.lang.String(true)
+2018-06-20 18:34:03.471  INFO 15768 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache models with key java.lang.String(true)
+2018-06-20 18:34:03.472  INFO 15768 --- [restartedMain] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.lang.String(true)
+2018-06-20 18:34:03.472  INFO 15768 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelDependencies with key java.lang.String(true)
+2018-06-20 18:34:03.472  INFO 15768 --- [restartedMain] s.d.spring.web.OperationsKeyGenerator    : Cache key generated: /admin/article/{id}.cn.wmyskxz.blog.controller.BackController.updateArticle.DefaultGenericTypeNamingStrategy
+2018-06-20 18:34:03.472  INFO 15768 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache operations with key /admin/article/{id}.cn.wmyskxz.blog.controller.BackController.updateArticle.DefaultGenericTypeNamingStrategy
+2018-06-20 18:34:03.477  INFO 15768 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method updateArticle was back-controller
+2018-06-20 18:34:03.481  INFO 15768 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method updateArticle was back-controller
+2018-06-20 18:34:03.484  INFO 15768 --- [restartedMain] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.lang.String(true)
+2018-06-20 18:34:03.484  INFO 15768 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache models with key java.lang.String(true)
+2018-06-20 18:34:03.484  INFO 15768 --- [restartedMain] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.lang.String(true)
+2018-06-20 18:34:03.485  INFO 15768 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelDependencies with key java.lang.String(true)
+2018-06-20 18:34:03.485  INFO 15768 --- [restartedMain] s.d.spring.web.OperationsKeyGenerator    : Cache key generated: /admin/article/picture/{id}.cn.wmyskxz.blog.controller.BackController.updateArticlePicture.DefaultGenericTypeNamingStrategy
+2018-06-20 18:34:03.485  INFO 15768 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache operations with key /admin/article/picture/{id}.cn.wmyskxz.blog.controller.BackController.updateArticlePicture.DefaultGenericTypeNamingStrategy
+2018-06-20 18:34:03.489  INFO 15768 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method updateArticlePicture was back-controller
+2018-06-20 18:34:03.491  INFO 15768 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method updateArticlePicture was back-controller
+2018-06-20 18:34:03.494  INFO 15768 --- [restartedMain] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: cn.wmyskxz.blog.entity.CategoryInfo(false)
+2018-06-20 18:34:03.494  INFO 15768 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache models with key cn.wmyskxz.blog.entity.CategoryInfo(false)
+2018-06-20 18:34:03.494  INFO 15768 --- [restartedMain] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: cn.wmyskxz.blog.entity.CategoryInfo(false)
+2018-06-20 18:34:03.494  INFO 15768 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelDependencies with key cn.wmyskxz.blog.entity.CategoryInfo(false)
+2018-06-20 18:34:03.494  INFO 15768 --- [restartedMain] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.lang.String(true)
+2018-06-20 18:34:03.494  INFO 15768 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache models with key java.lang.String(true)
+2018-06-20 18:34:03.495  INFO 15768 --- [restartedMain] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.lang.String(true)
+2018-06-20 18:34:03.495  INFO 15768 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelDependencies with key java.lang.String(true)
+2018-06-20 18:34:03.495  INFO 15768 --- [restartedMain] s.d.spring.web.OperationsKeyGenerator    : Cache key generated: /admin/category/{id}.cn.wmyskxz.blog.controller.BackController.updateCategoryInfo.DefaultGenericTypeNamingStrategy
+2018-06-20 18:34:03.495  INFO 15768 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache operations with key /admin/category/{id}.cn.wmyskxz.blog.controller.BackController.updateCategoryInfo.DefaultGenericTypeNamingStrategy
+2018-06-20 18:34:03.499  INFO 15768 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method updateCategoryInfo was back-controller
+2018-06-20 18:34:03.507  INFO 15768 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method updateCategoryInfo was back-controller
+2018-06-20 18:34:03.519  INFO 15768 --- [restartedMain] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.lang.String(true)
+2018-06-20 18:34:03.519  INFO 15768 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache models with key java.lang.String(true)
+2018-06-20 18:34:03.520  INFO 15768 --- [restartedMain] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.lang.String(true)
+2018-06-20 18:34:03.520  INFO 15768 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelDependencies with key java.lang.String(true)
+2018-06-20 18:34:03.520  INFO 15768 --- [restartedMain] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: cn.wmyskxz.blog.dto.ArticleCommentDto(false)
+2018-06-20 18:34:03.520  INFO 15768 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache models with key cn.wmyskxz.blog.dto.ArticleCommentDto(false)
+2018-06-20 18:34:03.520  INFO 15768 --- [restartedMain] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: cn.wmyskxz.blog.dto.ArticleCommentDto(false)
+2018-06-20 18:34:03.521  INFO 15768 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelProperties with key cn.wmyskxz.blog.dto.ArticleCommentDto(false)
+2018-06-20 18:34:03.524  INFO 15768 --- [restartedMain] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: cn.wmyskxz.blog.dto.ArticleCommentDto(false)
+2018-06-20 18:34:03.524  INFO 15768 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelDependencies with key cn.wmyskxz.blog.dto.ArticleCommentDto(false)
+2018-06-20 18:34:03.524  INFO 15768 --- [restartedMain] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: cn.wmyskxz.blog.dto.ArticleCommentDto(false)
+2018-06-20 18:34:03.524  INFO 15768 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelProperties with key cn.wmyskxz.blog.dto.ArticleCommentDto(false)
+2018-06-20 18:34:03.525  INFO 15768 --- [restartedMain] s.d.spring.web.OperationsKeyGenerator    : Cache key generated: /api/comment/article/{id}.cn.wmyskxz.blog.controller.ForeController.addArticleComment.DefaultGenericTypeNamingStrategy
+2018-06-20 18:34:03.525  INFO 15768 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache operations with key /api/comment/article/{id}.cn.wmyskxz.blog.controller.ForeController.addArticleComment.DefaultGenericTypeNamingStrategy
+2018-06-20 18:34:03.528  INFO 15768 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method addArticleComment was fore-controller
+2018-06-20 18:34:03.531  INFO 15768 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method addArticleComment was fore-controller
+2018-06-20 18:34:03.534  INFO 15768 --- [restartedMain] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.lang.String(true)
+2018-06-20 18:34:03.535  INFO 15768 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache models with key java.lang.String(true)
+2018-06-20 18:34:03.535  INFO 15768 --- [restartedMain] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.lang.String(true)
+2018-06-20 18:34:03.535  INFO 15768 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelDependencies with key java.lang.String(true)
+2018-06-20 18:34:03.535  INFO 15768 --- [restartedMain] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: cn.wmyskxz.blog.entity.Comment(false)
+2018-06-20 18:34:03.535  INFO 15768 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache models with key cn.wmyskxz.blog.entity.Comment(false)
+2018-06-20 18:34:03.536  INFO 15768 --- [restartedMain] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: cn.wmyskxz.blog.entity.Comment(false)
+2018-06-20 18:34:03.536  INFO 15768 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelProperties with key cn.wmyskxz.blog.entity.Comment(false)
+2018-06-20 18:34:03.538  INFO 15768 --- [restartedMain] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: cn.wmyskxz.blog.entity.Comment(false)
+2018-06-20 18:34:03.538  INFO 15768 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelDependencies with key cn.wmyskxz.blog.entity.Comment(false)
+2018-06-20 18:34:03.539  INFO 15768 --- [restartedMain] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: cn.wmyskxz.blog.entity.Comment(false)
+2018-06-20 18:34:03.539  INFO 15768 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelProperties with key cn.wmyskxz.blog.entity.Comment(false)
+2018-06-20 18:34:03.539  INFO 15768 --- [restartedMain] s.d.spring.web.OperationsKeyGenerator    : Cache key generated: /api/comment.cn.wmyskxz.blog.controller.ForeController.addMessage.DefaultGenericTypeNamingStrategy
+2018-06-20 18:34:03.539  INFO 15768 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache operations with key /api/comment.cn.wmyskxz.blog.controller.ForeController.addMessage.DefaultGenericTypeNamingStrategy
+2018-06-20 18:34:03.541  INFO 15768 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method addMessage was fore-controller
+2018-06-20 18:34:03.543  INFO 15768 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method addMessage was fore-controller
+2018-06-20 18:34:03.546  INFO 15768 --- [restartedMain] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: cn.wmyskxz.blog.dto.ArticleDto(true)
+2018-06-20 18:34:03.546  INFO 15768 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache models with key cn.wmyskxz.blog.dto.ArticleDto(true)
+2018-06-20 18:34:03.546  INFO 15768 --- [restartedMain] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: cn.wmyskxz.blog.dto.ArticleDto(true)
+2018-06-20 18:34:03.546  INFO 15768 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelProperties with key cn.wmyskxz.blog.dto.ArticleDto(true)
+2018-06-20 18:34:03.550  INFO 15768 --- [restartedMain] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: cn.wmyskxz.blog.dto.ArticleDto(true)
+2018-06-20 18:34:03.550  INFO 15768 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelDependencies with key cn.wmyskxz.blog.dto.ArticleDto(true)
+2018-06-20 18:34:03.550  INFO 15768 --- [restartedMain] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: cn.wmyskxz.blog.dto.ArticleDto(true)
+2018-06-20 18:34:03.550  INFO 15768 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelProperties with key cn.wmyskxz.blog.dto.ArticleDto(true)
+2018-06-20 18:34:03.551  INFO 15768 --- [restartedMain] s.d.spring.web.OperationsKeyGenerator    : Cache key generated: /api/article/{id}.cn.wmyskxz.blog.controller.ForeController.getArticleById.DefaultGenericTypeNamingStrategy
+2018-06-20 18:34:03.551  INFO 15768 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache operations with key /api/article/{id}.cn.wmyskxz.blog.controller.ForeController.getArticleById.DefaultGenericTypeNamingStrategy
+2018-06-20 18:34:03.553  INFO 15768 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method getArticleById was fore-controller
+2018-06-20 18:34:03.555  INFO 15768 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method getArticleById was fore-controller
+2018-06-20 18:34:03.557  INFO 15768 --- [restartedMain] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.util.List<cn.wmyskxz.blog.dto.ArticleWithPictureDto>(true)
+2018-06-20 18:34:03.558  INFO 15768 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache models with key java.util.List<cn.wmyskxz.blog.dto.ArticleWithPictureDto>(true)
+2018-06-20 18:34:03.558  INFO 15768 --- [restartedMain] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.util.List<cn.wmyskxz.blog.dto.ArticleWithPictureDto>(true)
+2018-06-20 18:34:03.558  INFO 15768 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelDependencies with key java.util.List<cn.wmyskxz.blog.dto.ArticleWithPictureDto>(true)
+2018-06-20 18:34:03.558  INFO 15768 --- [restartedMain] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: cn.wmyskxz.blog.dto.ArticleWithPictureDto(true)
+2018-06-20 18:34:03.558  INFO 15768 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelProperties with key cn.wmyskxz.blog.dto.ArticleWithPictureDto(true)
+2018-06-20 18:34:03.561  INFO 15768 --- [restartedMain] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: java.util.List<cn.wmyskxz.blog.dto.ArticleWithPictureDto>(true)
+2018-06-20 18:34:03.562  INFO 15768 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelProperties with key java.util.List<cn.wmyskxz.blog.dto.ArticleWithPictureDto>(true)
+2018-06-20 18:34:03.563  INFO 15768 --- [restartedMain] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: cn.wmyskxz.blog.dto.ArticleWithPictureDto(true)
+2018-06-20 18:34:03.563  INFO 15768 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelProperties with key cn.wmyskxz.blog.dto.ArticleWithPictureDto(true)
+2018-06-20 18:34:03.564  INFO 15768 --- [restartedMain] s.d.spring.web.OperationsKeyGenerator    : Cache key generated: /api/article/list.cn.wmyskxz.blog.controller.ForeController.listAllArticleInfo.DefaultGenericTypeNamingStrategy
+2018-06-20 18:34:03.564  INFO 15768 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache operations with key /api/article/list.cn.wmyskxz.blog.controller.ForeController.listAllArticleInfo.DefaultGenericTypeNamingStrategy
+2018-06-20 18:34:03.565  INFO 15768 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method listAllArticleInfo was fore-controller
+2018-06-20 18:34:03.566  INFO 15768 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method listAllArticleInfo was fore-controller
+2018-06-20 18:34:03.568  INFO 15768 --- [restartedMain] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.util.List<cn.wmyskxz.blog.entity.CategoryInfo>(true)
+2018-06-20 18:34:03.569  INFO 15768 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache models with key java.util.List<cn.wmyskxz.blog.entity.CategoryInfo>(true)
+2018-06-20 18:34:03.569  INFO 15768 --- [restartedMain] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.util.List<cn.wmyskxz.blog.entity.CategoryInfo>(true)
+2018-06-20 18:34:03.569  INFO 15768 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelDependencies with key java.util.List<cn.wmyskxz.blog.entity.CategoryInfo>(true)
+2018-06-20 18:34:03.569  INFO 15768 --- [restartedMain] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: cn.wmyskxz.blog.entity.CategoryInfo(true)
+2018-06-20 18:34:03.569  INFO 15768 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelProperties with key cn.wmyskxz.blog.entity.CategoryInfo(true)
+2018-06-20 18:34:03.570  INFO 15768 --- [restartedMain] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: java.util.List<cn.wmyskxz.blog.entity.CategoryInfo>(true)
+2018-06-20 18:34:03.570  INFO 15768 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelProperties with key java.util.List<cn.wmyskxz.blog.entity.CategoryInfo>(true)
+2018-06-20 18:34:03.570  INFO 15768 --- [restartedMain] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: cn.wmyskxz.blog.entity.CategoryInfo(true)
+2018-06-20 18:34:03.570  INFO 15768 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelProperties with key cn.wmyskxz.blog.entity.CategoryInfo(true)
+2018-06-20 18:34:03.571  INFO 15768 --- [restartedMain] s.d.spring.web.OperationsKeyGenerator    : Cache key generated: /api/category/list.cn.wmyskxz.blog.controller.ForeController.listAllCategoryInfo.DefaultGenericTypeNamingStrategy
+2018-06-20 18:34:03.571  INFO 15768 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache operations with key /api/category/list.cn.wmyskxz.blog.controller.ForeController.listAllCategoryInfo.DefaultGenericTypeNamingStrategy
+2018-06-20 18:34:03.572  INFO 15768 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method listAllCategoryInfo was fore-controller
+2018-06-20 18:34:03.575  INFO 15768 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method listAllCategoryInfo was fore-controller
+2018-06-20 18:34:03.577  INFO 15768 --- [restartedMain] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.util.List<cn.wmyskxz.blog.entity.Comment>(true)
+2018-06-20 18:34:03.577  INFO 15768 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache models with key java.util.List<cn.wmyskxz.blog.entity.Comment>(true)
+2018-06-20 18:34:03.577  INFO 15768 --- [restartedMain] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.util.List<cn.wmyskxz.blog.entity.Comment>(true)
+2018-06-20 18:34:03.577  INFO 15768 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelDependencies with key java.util.List<cn.wmyskxz.blog.entity.Comment>(true)
+2018-06-20 18:34:03.578  INFO 15768 --- [restartedMain] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: cn.wmyskxz.blog.entity.Comment(true)
+2018-06-20 18:34:03.578  INFO 15768 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelProperties with key cn.wmyskxz.blog.entity.Comment(true)
+2018-06-20 18:34:03.578  INFO 15768 --- [restartedMain] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: java.util.List<cn.wmyskxz.blog.entity.Comment>(true)
+2018-06-20 18:34:03.578  INFO 15768 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelProperties with key java.util.List<cn.wmyskxz.blog.entity.Comment>(true)
+2018-06-20 18:34:03.578  INFO 15768 --- [restartedMain] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: cn.wmyskxz.blog.entity.Comment(true)
+2018-06-20 18:34:03.579  INFO 15768 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelProperties with key cn.wmyskxz.blog.entity.Comment(true)
+2018-06-20 18:34:03.581  INFO 15768 --- [restartedMain] s.d.spring.web.OperationsKeyGenerator    : Cache key generated: /api/comment/list.cn.wmyskxz.blog.controller.ForeController.listAllComment.DefaultGenericTypeNamingStrategy
+2018-06-20 18:34:03.581  INFO 15768 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache operations with key /api/comment/list.cn.wmyskxz.blog.controller.ForeController.listAllComment.DefaultGenericTypeNamingStrategy
+2018-06-20 18:34:03.583  INFO 15768 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method listAllComment was fore-controller
+2018-06-20 18:34:03.585  INFO 15768 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method listAllComment was fore-controller
+2018-06-20 18:34:03.587  INFO 15768 --- [restartedMain] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.util.List<cn.wmyskxz.blog.dto.ArticleWithPictureDto>(true)
+2018-06-20 18:34:03.587  INFO 15768 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache models with key java.util.List<cn.wmyskxz.blog.dto.ArticleWithPictureDto>(true)
+2018-06-20 18:34:03.587  INFO 15768 --- [restartedMain] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.util.List<cn.wmyskxz.blog.dto.ArticleWithPictureDto>(true)
+2018-06-20 18:34:03.587  INFO 15768 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelDependencies with key java.util.List<cn.wmyskxz.blog.dto.ArticleWithPictureDto>(true)
+2018-06-20 18:34:03.587  INFO 15768 --- [restartedMain] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: cn.wmyskxz.blog.dto.ArticleWithPictureDto(true)
+2018-06-20 18:34:03.587  INFO 15768 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelProperties with key cn.wmyskxz.blog.dto.ArticleWithPictureDto(true)
+2018-06-20 18:34:03.588  INFO 15768 --- [restartedMain] s.d.spring.web.OperationsKeyGenerator    : Cache key generated: /api/article/list/sort/{id}.cn.wmyskxz.blog.controller.ForeController.listArticleInfo.DefaultGenericTypeNamingStrategy
+2018-06-20 18:34:03.588  INFO 15768 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache operations with key /api/article/list/sort/{id}.cn.wmyskxz.blog.controller.ForeController.listArticleInfo.DefaultGenericTypeNamingStrategy
+2018-06-20 18:34:03.590  INFO 15768 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method listArticleInfo was fore-controller
+2018-06-20 18:34:03.591  INFO 15768 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method listArticleInfo was fore-controller
+2018-06-20 18:34:03.593  INFO 15768 --- [restartedMain] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.util.List<cn.wmyskxz.blog.dto.ArticleWithPictureDto>(true)
+2018-06-20 18:34:03.593  INFO 15768 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache models with key java.util.List<cn.wmyskxz.blog.dto.ArticleWithPictureDto>(true)
+2018-06-20 18:34:03.593  INFO 15768 --- [restartedMain] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.util.List<cn.wmyskxz.blog.dto.ArticleWithPictureDto>(true)
+2018-06-20 18:34:03.594  INFO 15768 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelDependencies with key java.util.List<cn.wmyskxz.blog.dto.ArticleWithPictureDto>(true)
+2018-06-20 18:34:03.595  INFO 15768 --- [restartedMain] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: cn.wmyskxz.blog.dto.ArticleWithPictureDto(true)
+2018-06-20 18:34:03.595  INFO 15768 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelProperties with key cn.wmyskxz.blog.dto.ArticleWithPictureDto(true)
+2018-06-20 18:34:03.595  INFO 15768 --- [restartedMain] s.d.spring.web.OperationsKeyGenerator    : Cache key generated: /api/article/list/lastest.cn.wmyskxz.blog.controller.ForeController.listLastestArticle.DefaultGenericTypeNamingStrategy
+2018-06-20 18:34:03.595  INFO 15768 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache operations with key /api/article/list/lastest.cn.wmyskxz.blog.controller.ForeController.listLastestArticle.DefaultGenericTypeNamingStrategy
+2018-06-20 18:34:03.596  INFO 15768 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method listLastestArticle was fore-controller
+2018-06-20 18:34:03.598  INFO 15768 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method listLastestArticle was fore-controller
+2018-06-20 18:34:03.599  INFO 15768 --- [restartedMain] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.util.List<cn.wmyskxz.blog.dto.ArticleCommentDto>(true)
+2018-06-20 18:34:03.600  INFO 15768 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache models with key java.util.List<cn.wmyskxz.blog.dto.ArticleCommentDto>(true)
+2018-06-20 18:34:03.600  INFO 15768 --- [restartedMain] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.util.List<cn.wmyskxz.blog.dto.ArticleCommentDto>(true)
+2018-06-20 18:34:03.600  INFO 15768 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelDependencies with key java.util.List<cn.wmyskxz.blog.dto.ArticleCommentDto>(true)
+2018-06-20 18:34:03.600  INFO 15768 --- [restartedMain] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: cn.wmyskxz.blog.dto.ArticleCommentDto(true)
+2018-06-20 18:34:03.600  INFO 15768 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelProperties with key cn.wmyskxz.blog.dto.ArticleCommentDto(true)
+2018-06-20 18:34:03.603  INFO 15768 --- [restartedMain] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: java.util.List<cn.wmyskxz.blog.dto.ArticleCommentDto>(true)
+2018-06-20 18:34:03.604  INFO 15768 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelProperties with key java.util.List<cn.wmyskxz.blog.dto.ArticleCommentDto>(true)
+2018-06-20 18:34:03.604  INFO 15768 --- [restartedMain] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: cn.wmyskxz.blog.dto.ArticleCommentDto(true)
+2018-06-20 18:34:03.604  INFO 15768 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelProperties with key cn.wmyskxz.blog.dto.ArticleCommentDto(true)
+2018-06-20 18:34:03.605  INFO 15768 --- [restartedMain] s.d.spring.web.OperationsKeyGenerator    : Cache key generated: /api/comment/article/{id}.cn.wmyskxz.blog.controller.ForeController.listMessageByArticleId.DefaultGenericTypeNamingStrategy
+2018-06-20 18:34:03.605  INFO 15768 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache operations with key /api/comment/article/{id}.cn.wmyskxz.blog.controller.ForeController.listMessageByArticleId.DefaultGenericTypeNamingStrategy
+2018-06-20 18:34:03.607  INFO 15768 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method listMessageByArticleId was fore-controller
+2018-06-20 18:34:03.608  INFO 15768 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method listMessageByArticleId was fore-controller
+2018-06-20 18:34:03.709  INFO 15768 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2018-06-20 18:34:03.717  INFO 15768 --- [restartedMain] cn.wmyskxz.blog.BlogApplication          : Started BlogApplication in 12.576 seconds (JVM running for 19.567)
+2018-06-20 18:34:48.107  INFO 15768 --- [Thread-28] ConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@4cb5ec4a: startup date [Wed Jun 20 18:33:52 CST 2018]; root of context hierarchy
+2018-06-20 18:34:48.113  INFO 15768 --- [Thread-28] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-06-20 18:34:48.114  INFO 15768 --- [Thread-28] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2018-06-20 18:34:48.128  INFO 15768 --- [Thread-28] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2018-06-20 18:34:48.821  INFO 15768 --- [restartedMain] cn.wmyskxz.blog.BlogApplication          : Starting BlogApplication on SC-201801031345 with PID 15768 (F:\Projects\JavaProject\blog\target\classes started by Administrator in F:\Projects\JavaProject\blog)
+2018-06-20 18:34:48.822  INFO 15768 --- [restartedMain] cn.wmyskxz.blog.BlogApplication          : No active profile set, falling back to default profiles: default
+2018-06-20 18:34:48.826  INFO 15768 --- [restartedMain] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@67d35021: startup date [Wed Jun 20 18:34:48 CST 2018]; root of context hierarchy
+2018-06-20 18:34:49.733  INFO 15768 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$e9690409] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-06-20 18:34:49.951  INFO 15768 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2018-06-20 18:34:49.952  INFO 15768 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-06-20 18:34:49.953  INFO 15768 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.31
+2018-06-20 18:34:50.003  INFO 15768 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-06-20 18:34:50.004  INFO 15768 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1179 ms
+2018-06-20 18:34:50.057  INFO 15768 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2018-06-20 18:34:50.057  INFO 15768 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet statViewServlet mapped to [/druid/*]
+2018-06-20 18:34:50.057  INFO 15768 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-06-20 18:34:50.058  INFO 15768 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-06-20 18:34:50.058  INFO 15768 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-06-20 18:34:50.058  INFO 15768 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-06-20 18:34:50.058  INFO 15768 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webStatFilter' to urls: [/*]
+2018-06-20 18:34:50.103  INFO 15768 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2018-06-20 18:34:50.243  INFO 15768 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-2} inited
+2018-06-20 18:34:50.662  INFO 15768 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/article/],methods=[POST]}" onto public java.lang.String cn.wmyskxz.blog.controller.BackController.addArticle(cn.wmyskxz.blog.dto.ArticleDto)
+2018-06-20 18:34:50.663  INFO 15768 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/category],methods=[POST]}" onto public java.lang.String cn.wmyskxz.blog.controller.BackController.addCategoryInfo(cn.wmyskxz.blog.entity.CategoryInfo)
+2018-06-20 18:34:50.663  INFO 15768 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/article/{id}],methods=[PUT]}" onto public java.lang.String cn.wmyskxz.blog.controller.BackController.updateArticle(java.lang.Long,cn.wmyskxz.blog.dto.ArticleDto)
+2018-06-20 18:34:50.664  INFO 15768 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/article/{id}],methods=[DELETE]}" onto public java.lang.String cn.wmyskxz.blog.controller.BackController.deleteArticle(java.lang.Long)
+2018-06-20 18:34:50.664  INFO 15768 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/comment/{id}],methods=[DELETE]}" onto public java.lang.String cn.wmyskxz.blog.controller.BackController.deleteComment(java.lang.Long)
+2018-06-20 18:34:50.664  INFO 15768 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/category/{id}],methods=[GET]}" onto public cn.wmyskxz.blog.entity.CategoryInfo cn.wmyskxz.blog.controller.BackController.getCategoryInfo(java.lang.Long)
+2018-06-20 18:34:50.665  INFO 15768 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/comment/reply/{id}],methods=[GET]}" onto public java.lang.String cn.wmyskxz.blog.controller.BackController.replyComment(java.lang.Long)
+2018-06-20 18:34:50.665  INFO 15768 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/{id}],methods=[GET]}" onto public cn.wmyskxz.blog.entity.Comment cn.wmyskxz.blog.controller.BackController.getCommentById(java.lang.Long)
+2018-06-20 18:34:50.665  INFO 15768 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/category/{id}],methods=[DELETE]}" onto public java.lang.String cn.wmyskxz.blog.controller.BackController.deleteCategoryInfo(java.lang.Long)
+2018-06-20 18:34:50.666  INFO 15768 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/comment/article/{id}],methods=[DELETE]}" onto public java.lang.String cn.wmyskxz.blog.controller.BackController.deleteArticleComment(java.lang.Long)
+2018-06-20 18:34:50.666  INFO 15768 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/article/sort/{id}],methods=[PUT]}" onto public java.lang.String cn.wmyskxz.blog.controller.BackController.changeArticleCategory(java.lang.Long,java.lang.Long)
+2018-06-20 18:34:50.666  INFO 15768 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/article/picture/{id}],methods=[PUT]}" onto public java.lang.String cn.wmyskxz.blog.controller.BackController.updateArticlePicture(java.lang.Long,java.lang.String)
+2018-06-20 18:34:50.667  INFO 15768 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/category/{id}],methods=[PUT]}" onto public java.lang.String cn.wmyskxz.blog.controller.BackController.updateCategoryInfo(java.lang.Long,cn.wmyskxz.blog.entity.CategoryInfo)
+2018-06-20 18:34:50.672  INFO 15768 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/comment],methods=[POST]}" onto public java.lang.String cn.wmyskxz.blog.controller.ForeController.addMessage(cn.wmyskxz.blog.entity.Comment,javax.servlet.http.HttpServletRequest)
+2018-06-20 18:34:50.672  INFO 15768 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/article/{id}],methods=[GET]}" onto public cn.wmyskxz.blog.dto.ArticleDto cn.wmyskxz.blog.controller.ForeController.getArticleById(java.lang.Long)
+2018-06-20 18:34:50.673  INFO 15768 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/comment/list],methods=[GET]}" onto public java.util.List<cn.wmyskxz.blog.entity.Comment> cn.wmyskxz.blog.controller.ForeController.listAllComment()
+2018-06-20 18:34:50.673  INFO 15768 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/article/list/sort/{id}],methods=[GET]}" onto public java.util.List<cn.wmyskxz.blog.dto.ArticleWithPictureDto> cn.wmyskxz.blog.controller.ForeController.listArticleInfo(java.lang.Long)
+2018-06-20 18:34:50.674  INFO 15768 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/category/list],methods=[GET]}" onto public java.util.List<cn.wmyskxz.blog.entity.CategoryInfo> cn.wmyskxz.blog.controller.ForeController.listAllCategoryInfo()
+2018-06-20 18:34:50.674  INFO 15768 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/article/list],methods=[GET]}" onto public java.util.List<cn.wmyskxz.blog.dto.ArticleWithPictureDto> cn.wmyskxz.blog.controller.ForeController.listAllArticleInfo()
+2018-06-20 18:34:50.674  INFO 15768 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/article/list/lastest],methods=[GET]}" onto public java.util.List<cn.wmyskxz.blog.dto.ArticleWithPictureDto> cn.wmyskxz.blog.controller.ForeController.listLastestArticle()
+2018-06-20 18:34:50.674  INFO 15768 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/comment/article/{id}],methods=[GET]}" onto public java.util.List<cn.wmyskxz.blog.dto.ArticleCommentDto> cn.wmyskxz.blog.controller.ForeController.listMessageByArticleId(java.lang.Long)
+2018-06-20 18:34:50.675  INFO 15768 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/comment/article/{id}],methods=[POST]}" onto public java.lang.String cn.wmyskxz.blog.controller.ForeController.addArticleComment(java.lang.Long,cn.wmyskxz.blog.dto.ArticleCommentDto,javax.servlet.http.HttpServletRequest)
+2018-06-20 18:34:50.675  INFO 15768 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/v2/api-docs],methods=[GET]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String)
+2018-06-20 18:34:50.677  INFO 15768 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2018-06-20 18:34:50.678  INFO 15768 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2018-06-20 18:34:50.678  INFO 15768 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2018-06-20 18:34:50.680  INFO 15768 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-06-20 18:34:50.680  INFO 15768 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-06-20 18:34:50.750  INFO 15768 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-20 18:34:50.817  INFO 15768 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@67d35021: startup date [Wed Jun 20 18:34:48 CST 2018]; root of context hierarchy
+2018-06-20 18:34:50.833  INFO 15768 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-20 18:34:50.833  INFO 15768 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-20 18:34:50.976  INFO 15768 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2018-06-20 18:34:51.029  INFO 15768 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-06-20 18:34:51.031  INFO 15768 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'statFilter' has been autodetected for JMX exposure
+2018-06-20 18:34:51.031  INFO 15768 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-06-20 18:34:51.037  INFO 15768 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.spring.boot.autoconfigure:name=dataSource,type=DruidDataSourceWrapper]
+2018-06-20 18:34:51.038  INFO 15768 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'statFilter': registering with JMX server as MBean [com.alibaba.druid.filter.stat:name=statFilter,type=StatFilter]
+2018-06-20 18:34:51.050  INFO 15768 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2018-06-20 18:34:51.051  INFO 15768 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found {0} custom documentation plugin(s)
+2018-06-20 18:34:51.054  INFO 15768 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2018-06-20 18:34:51.055  INFO 15768 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method addArticle was back-controller
+2018-06-20 18:34:51.055  INFO 15768 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: addArticle belongs to groups: [[ResourceGroup{groupName='back-controller', position=0, controller=cn.wmyskxz.blog.controller.BackController}]] 
+2018-06-20 18:34:51.055  INFO 15768 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method updateArticlePicture was back-controller
+2018-06-20 18:34:51.055  INFO 15768 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: updateArticlePicture belongs to groups: [[ResourceGroup{groupName='back-controller', position=0, controller=cn.wmyskxz.blog.controller.BackController}]] 
+2018-06-20 18:34:51.055  INFO 15768 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method changeArticleCategory was back-controller
+2018-06-20 18:34:51.056  INFO 15768 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: changeArticleCategory belongs to groups: [[ResourceGroup{groupName='back-controller', position=0, controller=cn.wmyskxz.blog.controller.BackController}]] 
+2018-06-20 18:34:51.056  INFO 15768 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method updateArticle was back-controller
+2018-06-20 18:34:51.056  INFO 15768 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: updateArticle belongs to groups: [[ResourceGroup{groupName='back-controller', position=0, controller=cn.wmyskxz.blog.controller.BackController}]] 
+2018-06-20 18:34:51.056  INFO 15768 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method deleteArticle was back-controller
+2018-06-20 18:34:51.057  INFO 15768 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: deleteArticle belongs to groups: [[ResourceGroup{groupName='back-controller', position=0, controller=cn.wmyskxz.blog.controller.BackController}]] 
+2018-06-20 18:34:51.057  INFO 15768 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method getCategoryInfo was back-controller
+2018-06-20 18:34:51.057  INFO 15768 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: getCategoryInfo belongs to groups: [[ResourceGroup{groupName='back-controller', position=0, controller=cn.wmyskxz.blog.controller.BackController}]] 
+2018-06-20 18:34:51.058  INFO 15768 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method deleteCategoryInfo was back-controller
+2018-06-20 18:34:51.058  INFO 15768 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: deleteCategoryInfo belongs to groups: [[ResourceGroup{groupName='back-controller', position=0, controller=cn.wmyskxz.blog.controller.BackController}]] 
+2018-06-20 18:34:51.059  INFO 15768 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method updateCategoryInfo was back-controller
+2018-06-20 18:34:51.059  INFO 15768 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: updateCategoryInfo belongs to groups: [[ResourceGroup{groupName='back-controller', position=0, controller=cn.wmyskxz.blog.controller.BackController}]] 
+2018-06-20 18:34:51.059  INFO 15768 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method addCategoryInfo was back-controller
+2018-06-20 18:34:51.060  INFO 15768 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: addCategoryInfo belongs to groups: [[ResourceGroup{groupName='back-controller', position=0, controller=cn.wmyskxz.blog.controller.BackController}]] 
+2018-06-20 18:34:51.060  INFO 15768 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method deleteArticleComment was back-controller
+2018-06-20 18:34:51.060  INFO 15768 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: deleteArticleComment belongs to groups: [[ResourceGroup{groupName='back-controller', position=0, controller=cn.wmyskxz.blog.controller.BackController}]] 
+2018-06-20 18:34:51.061  INFO 15768 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method replyComment was back-controller
+2018-06-20 18:34:51.061  INFO 15768 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: replyComment belongs to groups: [[ResourceGroup{groupName='back-controller', position=0, controller=cn.wmyskxz.blog.controller.BackController}]] 
+2018-06-20 18:34:51.061  INFO 15768 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method deleteComment was back-controller
+2018-06-20 18:34:51.061  INFO 15768 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: deleteComment belongs to groups: [[ResourceGroup{groupName='back-controller', position=0, controller=cn.wmyskxz.blog.controller.BackController}]] 
+2018-06-20 18:34:51.061  INFO 15768 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method getCommentById was back-controller
+2018-06-20 18:34:51.061  INFO 15768 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: getCommentById belongs to groups: [[ResourceGroup{groupName='back-controller', position=0, controller=cn.wmyskxz.blog.controller.BackController}]] 
+2018-06-20 18:34:51.062  INFO 15768 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method listLastestArticle was fore-controller
+2018-06-20 18:34:51.062  INFO 15768 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: listLastestArticle belongs to groups: [[ResourceGroup{groupName='fore-controller', position=0, controller=cn.wmyskxz.blog.controller.ForeController}]] 
+2018-06-20 18:34:51.062  INFO 15768 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method listArticleInfo was fore-controller
+2018-06-20 18:34:51.062  INFO 15768 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: listArticleInfo belongs to groups: [[ResourceGroup{groupName='fore-controller', position=0, controller=cn.wmyskxz.blog.controller.ForeController}]] 
+2018-06-20 18:34:51.062  INFO 15768 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method listAllArticleInfo was fore-controller
+2018-06-20 18:34:51.062  INFO 15768 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: listAllArticleInfo belongs to groups: [[ResourceGroup{groupName='fore-controller', position=0, controller=cn.wmyskxz.blog.controller.ForeController}]] 
+2018-06-20 18:34:51.062  INFO 15768 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method getArticleById was fore-controller
+2018-06-20 18:34:51.063  INFO 15768 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: getArticleById belongs to groups: [[ResourceGroup{groupName='fore-controller', position=0, controller=cn.wmyskxz.blog.controller.ForeController}]] 
+2018-06-20 18:34:51.063  INFO 15768 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method listAllCategoryInfo was fore-controller
+2018-06-20 18:34:51.064  INFO 15768 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: listAllCategoryInfo belongs to groups: [[ResourceGroup{groupName='fore-controller', position=0, controller=cn.wmyskxz.blog.controller.ForeController}]] 
+2018-06-20 18:34:51.064  INFO 15768 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method listMessageByArticleId was fore-controller
+2018-06-20 18:34:51.064  INFO 15768 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: listMessageByArticleId belongs to groups: [[ResourceGroup{groupName='fore-controller', position=0, controller=cn.wmyskxz.blog.controller.ForeController}]] 
+2018-06-20 18:34:51.065  INFO 15768 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method addArticleComment was fore-controller
+2018-06-20 18:34:51.065  INFO 15768 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: addArticleComment belongs to groups: [[ResourceGroup{groupName='fore-controller', position=0, controller=cn.wmyskxz.blog.controller.ForeController}]] 
+2018-06-20 18:34:51.065  INFO 15768 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method listAllComment was fore-controller
+2018-06-20 18:34:51.065  INFO 15768 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: listAllComment belongs to groups: [[ResourceGroup{groupName='fore-controller', position=0, controller=cn.wmyskxz.blog.controller.ForeController}]] 
+2018-06-20 18:34:51.066  INFO 15768 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method addMessage was fore-controller
+2018-06-20 18:34:51.067  INFO 15768 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: addMessage belongs to groups: [[ResourceGroup{groupName='fore-controller', position=0, controller=cn.wmyskxz.blog.controller.ForeController}]] 
+2018-06-20 18:34:51.067  INFO 15768 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Created resource listing Path: /default/back-controller Description: back-controller Position: 0
+2018-06-20 18:34:51.067  INFO 15768 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Created resource listing Path: /default/fore-controller Description: fore-controller Position: 0
+2018-06-20 18:34:51.071  INFO 15768 --- [restartedMain] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: cn.wmyskxz.blog.dto.ArticleDto(false)
+2018-06-20 18:34:51.071  INFO 15768 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache models with key cn.wmyskxz.blog.dto.ArticleDto(false)
+2018-06-20 18:34:51.079  INFO 15768 --- [restartedMain] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: cn.wmyskxz.blog.dto.ArticleDto(false)
+2018-06-20 18:34:51.079  INFO 15768 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelProperties with key cn.wmyskxz.blog.dto.ArticleDto(false)
+2018-06-20 18:34:51.089  INFO 15768 --- [restartedMain] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: cn.wmyskxz.blog.dto.ArticleDto(false)
+2018-06-20 18:34:51.089  INFO 15768 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelDependencies with key cn.wmyskxz.blog.dto.ArticleDto(false)
+2018-06-20 18:34:51.092  INFO 15768 --- [restartedMain] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: cn.wmyskxz.blog.dto.ArticleDto(false)
+2018-06-20 18:34:51.092  INFO 15768 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelProperties with key cn.wmyskxz.blog.dto.ArticleDto(false)
+2018-06-20 18:34:51.095  INFO 15768 --- [restartedMain] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.lang.String(true)
+2018-06-20 18:34:51.095  INFO 15768 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache models with key java.lang.String(true)
+2018-06-20 18:34:51.095  INFO 15768 --- [restartedMain] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.lang.String(true)
+2018-06-20 18:34:51.095  INFO 15768 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelDependencies with key java.lang.String(true)
+2018-06-20 18:34:51.096  INFO 15768 --- [restartedMain] s.d.spring.web.OperationsKeyGenerator    : Cache key generated: /admin/article/.cn.wmyskxz.blog.controller.BackController.addArticle.DefaultGenericTypeNamingStrategy
+2018-06-20 18:34:51.096  INFO 15768 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache operations with key /admin/article/.cn.wmyskxz.blog.controller.BackController.addArticle.DefaultGenericTypeNamingStrategy
+2018-06-20 18:34:51.104  INFO 15768 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method addArticle was back-controller
+2018-06-20 18:34:51.106  INFO 15768 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method addArticle was back-controller
+2018-06-20 18:34:51.109  INFO 15768 --- [restartedMain] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: cn.wmyskxz.blog.entity.CategoryInfo(false)
+2018-06-20 18:34:51.109  INFO 15768 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache models with key cn.wmyskxz.blog.entity.CategoryInfo(false)
+2018-06-20 18:34:51.109  INFO 15768 --- [restartedMain] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: cn.wmyskxz.blog.entity.CategoryInfo(false)
+2018-06-20 18:34:51.109  INFO 15768 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelProperties with key cn.wmyskxz.blog.entity.CategoryInfo(false)
+2018-06-20 18:34:51.111  INFO 15768 --- [restartedMain] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: cn.wmyskxz.blog.entity.CategoryInfo(false)
+2018-06-20 18:34:51.111  INFO 15768 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelDependencies with key cn.wmyskxz.blog.entity.CategoryInfo(false)
+2018-06-20 18:34:51.111  INFO 15768 --- [restartedMain] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: cn.wmyskxz.blog.entity.CategoryInfo(false)
+2018-06-20 18:34:51.111  INFO 15768 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelProperties with key cn.wmyskxz.blog.entity.CategoryInfo(false)
+2018-06-20 18:34:51.112  INFO 15768 --- [restartedMain] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.lang.String(true)
+2018-06-20 18:34:51.112  INFO 15768 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache models with key java.lang.String(true)
+2018-06-20 18:34:51.112  INFO 15768 --- [restartedMain] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.lang.String(true)
+2018-06-20 18:34:51.112  INFO 15768 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelDependencies with key java.lang.String(true)
+2018-06-20 18:34:51.112  INFO 15768 --- [restartedMain] s.d.spring.web.OperationsKeyGenerator    : Cache key generated: /admin/category.cn.wmyskxz.blog.controller.BackController.addCategoryInfo.DefaultGenericTypeNamingStrategy
+2018-06-20 18:34:51.112  INFO 15768 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache operations with key /admin/category.cn.wmyskxz.blog.controller.BackController.addCategoryInfo.DefaultGenericTypeNamingStrategy
+2018-06-20 18:34:51.113  INFO 15768 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method addCategoryInfo was back-controller
+2018-06-20 18:34:51.115  INFO 15768 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method addCategoryInfo was back-controller
+2018-06-20 18:34:51.117  INFO 15768 --- [restartedMain] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.lang.String(true)
+2018-06-20 18:34:51.117  INFO 15768 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache models with key java.lang.String(true)
+2018-06-20 18:34:51.117  INFO 15768 --- [restartedMain] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.lang.String(true)
+2018-06-20 18:34:51.118  INFO 15768 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelDependencies with key java.lang.String(true)
+2018-06-20 18:34:51.118  INFO 15768 --- [restartedMain] s.d.spring.web.OperationsKeyGenerator    : Cache key generated: /admin/article/sort/{id}.cn.wmyskxz.blog.controller.BackController.changeArticleCategory.DefaultGenericTypeNamingStrategy
+2018-06-20 18:34:51.118  INFO 15768 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache operations with key /admin/article/sort/{id}.cn.wmyskxz.blog.controller.BackController.changeArticleCategory.DefaultGenericTypeNamingStrategy
+2018-06-20 18:34:51.122  INFO 15768 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method changeArticleCategory was back-controller
+2018-06-20 18:34:51.124  INFO 15768 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method changeArticleCategory was back-controller
+2018-06-20 18:34:51.127  INFO 15768 --- [restartedMain] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.lang.String(true)
+2018-06-20 18:34:51.128  INFO 15768 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache models with key java.lang.String(true)
+2018-06-20 18:34:51.128  INFO 15768 --- [restartedMain] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.lang.String(true)
+2018-06-20 18:34:51.128  INFO 15768 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelDependencies with key java.lang.String(true)
+2018-06-20 18:34:51.128  INFO 15768 --- [restartedMain] s.d.spring.web.OperationsKeyGenerator    : Cache key generated: /admin/article/{id}.cn.wmyskxz.blog.controller.BackController.deleteArticle.DefaultGenericTypeNamingStrategy
+2018-06-20 18:34:51.128  INFO 15768 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache operations with key /admin/article/{id}.cn.wmyskxz.blog.controller.BackController.deleteArticle.DefaultGenericTypeNamingStrategy
+2018-06-20 18:34:51.131  INFO 15768 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method deleteArticle was back-controller
+2018-06-20 18:34:51.133  INFO 15768 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method deleteArticle was back-controller
+2018-06-20 18:34:51.135  INFO 15768 --- [restartedMain] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.lang.String(true)
+2018-06-20 18:34:51.135  INFO 15768 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache models with key java.lang.String(true)
+2018-06-20 18:34:51.136  INFO 15768 --- [restartedMain] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.lang.String(true)
+2018-06-20 18:34:51.136  INFO 15768 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelDependencies with key java.lang.String(true)
+2018-06-20 18:34:51.136  INFO 15768 --- [restartedMain] s.d.spring.web.OperationsKeyGenerator    : Cache key generated: /admin/comment/article/{id}.cn.wmyskxz.blog.controller.BackController.deleteArticleComment.DefaultGenericTypeNamingStrategy
+2018-06-20 18:34:51.136  INFO 15768 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache operations with key /admin/comment/article/{id}.cn.wmyskxz.blog.controller.BackController.deleteArticleComment.DefaultGenericTypeNamingStrategy
+2018-06-20 18:34:51.138  INFO 15768 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method deleteArticleComment was back-controller
+2018-06-20 18:34:51.139  INFO 15768 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method deleteArticleComment was back-controller
+2018-06-20 18:34:51.141  INFO 15768 --- [restartedMain] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.lang.String(true)
+2018-06-20 18:34:51.141  INFO 15768 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache models with key java.lang.String(true)
+2018-06-20 18:34:51.141  INFO 15768 --- [restartedMain] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.lang.String(true)
+2018-06-20 18:34:51.141  INFO 15768 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelDependencies with key java.lang.String(true)
+2018-06-20 18:34:51.141  INFO 15768 --- [restartedMain] s.d.spring.web.OperationsKeyGenerator    : Cache key generated: /admin/category/{id}.cn.wmyskxz.blog.controller.BackController.deleteCategoryInfo.DefaultGenericTypeNamingStrategy
+2018-06-20 18:34:51.141  INFO 15768 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache operations with key /admin/category/{id}.cn.wmyskxz.blog.controller.BackController.deleteCategoryInfo.DefaultGenericTypeNamingStrategy
+2018-06-20 18:34:51.146  INFO 15768 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method deleteCategoryInfo was back-controller
+2018-06-20 18:34:51.147  INFO 15768 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method deleteCategoryInfo was back-controller
+2018-06-20 18:34:51.149  INFO 15768 --- [restartedMain] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.lang.String(true)
+2018-06-20 18:34:51.149  INFO 15768 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache models with key java.lang.String(true)
+2018-06-20 18:34:51.150  INFO 15768 --- [restartedMain] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.lang.String(true)
+2018-06-20 18:34:51.150  INFO 15768 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelDependencies with key java.lang.String(true)
+2018-06-20 18:34:51.150  INFO 15768 --- [restartedMain] s.d.spring.web.OperationsKeyGenerator    : Cache key generated: /admin/comment/{id}.cn.wmyskxz.blog.controller.BackController.deleteComment.DefaultGenericTypeNamingStrategy
+2018-06-20 18:34:51.150  INFO 15768 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache operations with key /admin/comment/{id}.cn.wmyskxz.blog.controller.BackController.deleteComment.DefaultGenericTypeNamingStrategy
+2018-06-20 18:34:51.155  INFO 15768 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method deleteComment was back-controller
+2018-06-20 18:34:51.156  INFO 15768 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method deleteComment was back-controller
+2018-06-20 18:34:51.158  INFO 15768 --- [restartedMain] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: cn.wmyskxz.blog.entity.CategoryInfo(true)
+2018-06-20 18:34:51.158  INFO 15768 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache models with key cn.wmyskxz.blog.entity.CategoryInfo(true)
+2018-06-20 18:34:51.158  INFO 15768 --- [restartedMain] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: cn.wmyskxz.blog.entity.CategoryInfo(true)
+2018-06-20 18:34:51.159  INFO 15768 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelProperties with key cn.wmyskxz.blog.entity.CategoryInfo(true)
+2018-06-20 18:34:51.160  INFO 15768 --- [restartedMain] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: cn.wmyskxz.blog.entity.CategoryInfo(true)
+2018-06-20 18:34:51.160  INFO 15768 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelDependencies with key cn.wmyskxz.blog.entity.CategoryInfo(true)
+2018-06-20 18:34:51.161  INFO 15768 --- [restartedMain] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: cn.wmyskxz.blog.entity.CategoryInfo(true)
+2018-06-20 18:34:51.161  INFO 15768 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelProperties with key cn.wmyskxz.blog.entity.CategoryInfo(true)
+2018-06-20 18:34:51.161  INFO 15768 --- [restartedMain] s.d.spring.web.OperationsKeyGenerator    : Cache key generated: /admin/category/{id}.cn.wmyskxz.blog.controller.BackController.getCategoryInfo.DefaultGenericTypeNamingStrategy
+2018-06-20 18:34:51.161  INFO 15768 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache operations with key /admin/category/{id}.cn.wmyskxz.blog.controller.BackController.getCategoryInfo.DefaultGenericTypeNamingStrategy
+2018-06-20 18:34:51.164  INFO 15768 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method getCategoryInfo was back-controller
+2018-06-20 18:34:51.165  INFO 15768 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method getCategoryInfo was back-controller
+2018-06-20 18:34:51.167  INFO 15768 --- [restartedMain] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: cn.wmyskxz.blog.entity.Comment(true)
+2018-06-20 18:34:51.167  INFO 15768 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache models with key cn.wmyskxz.blog.entity.Comment(true)
+2018-06-20 18:34:51.167  INFO 15768 --- [restartedMain] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: cn.wmyskxz.blog.entity.Comment(true)
+2018-06-20 18:34:51.167  INFO 15768 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelProperties with key cn.wmyskxz.blog.entity.Comment(true)
+2018-06-20 18:34:51.171  INFO 15768 --- [restartedMain] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: cn.wmyskxz.blog.entity.Comment(true)
+2018-06-20 18:34:51.171  INFO 15768 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelDependencies with key cn.wmyskxz.blog.entity.Comment(true)
+2018-06-20 18:34:51.171  INFO 15768 --- [restartedMain] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: cn.wmyskxz.blog.entity.Comment(true)
+2018-06-20 18:34:51.172  INFO 15768 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelProperties with key cn.wmyskxz.blog.entity.Comment(true)
+2018-06-20 18:34:51.172  INFO 15768 --- [restartedMain] s.d.spring.web.OperationsKeyGenerator    : Cache key generated: /admin/{id}.cn.wmyskxz.blog.controller.BackController.getCommentById.DefaultGenericTypeNamingStrategy
+2018-06-20 18:34:51.172  INFO 15768 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache operations with key /admin/{id}.cn.wmyskxz.blog.controller.BackController.getCommentById.DefaultGenericTypeNamingStrategy
+2018-06-20 18:34:51.175  INFO 15768 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method getCommentById was back-controller
+2018-06-20 18:34:51.176  INFO 15768 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method getCommentById was back-controller
+2018-06-20 18:34:51.179  INFO 15768 --- [restartedMain] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.lang.String(true)
+2018-06-20 18:34:51.180  INFO 15768 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache models with key java.lang.String(true)
+2018-06-20 18:34:51.180  INFO 15768 --- [restartedMain] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.lang.String(true)
+2018-06-20 18:34:51.180  INFO 15768 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelDependencies with key java.lang.String(true)
+2018-06-20 18:34:51.180  INFO 15768 --- [restartedMain] s.d.spring.web.OperationsKeyGenerator    : Cache key generated: /admin/comment/reply/{id}.cn.wmyskxz.blog.controller.BackController.replyComment.DefaultGenericTypeNamingStrategy
+2018-06-20 18:34:51.180  INFO 15768 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache operations with key /admin/comment/reply/{id}.cn.wmyskxz.blog.controller.BackController.replyComment.DefaultGenericTypeNamingStrategy
+2018-06-20 18:34:51.181  INFO 15768 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method replyComment was back-controller
+2018-06-20 18:34:51.184  INFO 15768 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method replyComment was back-controller
+2018-06-20 18:34:51.186  INFO 15768 --- [restartedMain] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: cn.wmyskxz.blog.dto.ArticleDto(false)
+2018-06-20 18:34:51.186  INFO 15768 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache models with key cn.wmyskxz.blog.dto.ArticleDto(false)
+2018-06-20 18:34:51.187  INFO 15768 --- [restartedMain] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: cn.wmyskxz.blog.dto.ArticleDto(false)
+2018-06-20 18:34:51.187  INFO 15768 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelDependencies with key cn.wmyskxz.blog.dto.ArticleDto(false)
+2018-06-20 18:34:51.187  INFO 15768 --- [restartedMain] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.lang.String(true)
+2018-06-20 18:34:51.187  INFO 15768 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache models with key java.lang.String(true)
+2018-06-20 18:34:51.187  INFO 15768 --- [restartedMain] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.lang.String(true)
+2018-06-20 18:34:51.187  INFO 15768 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelDependencies with key java.lang.String(true)
+2018-06-20 18:34:51.187  INFO 15768 --- [restartedMain] s.d.spring.web.OperationsKeyGenerator    : Cache key generated: /admin/article/{id}.cn.wmyskxz.blog.controller.BackController.updateArticle.DefaultGenericTypeNamingStrategy
+2018-06-20 18:34:51.187  INFO 15768 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache operations with key /admin/article/{id}.cn.wmyskxz.blog.controller.BackController.updateArticle.DefaultGenericTypeNamingStrategy
+2018-06-20 18:34:51.190  INFO 15768 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method updateArticle was back-controller
+2018-06-20 18:34:51.192  INFO 15768 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method updateArticle was back-controller
+2018-06-20 18:34:51.196  INFO 15768 --- [restartedMain] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.lang.String(true)
+2018-06-20 18:34:51.196  INFO 15768 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache models with key java.lang.String(true)
+2018-06-20 18:34:51.196  INFO 15768 --- [restartedMain] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.lang.String(true)
+2018-06-20 18:34:51.196  INFO 15768 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelDependencies with key java.lang.String(true)
+2018-06-20 18:34:51.196  INFO 15768 --- [restartedMain] s.d.spring.web.OperationsKeyGenerator    : Cache key generated: /admin/article/picture/{id}.cn.wmyskxz.blog.controller.BackController.updateArticlePicture.DefaultGenericTypeNamingStrategy
+2018-06-20 18:34:51.196  INFO 15768 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache operations with key /admin/article/picture/{id}.cn.wmyskxz.blog.controller.BackController.updateArticlePicture.DefaultGenericTypeNamingStrategy
+2018-06-20 18:34:51.199  INFO 15768 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method updateArticlePicture was back-controller
+2018-06-20 18:34:51.200  INFO 15768 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method updateArticlePicture was back-controller
+2018-06-20 18:34:51.203  INFO 15768 --- [restartedMain] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: cn.wmyskxz.blog.entity.CategoryInfo(false)
+2018-06-20 18:34:51.203  INFO 15768 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache models with key cn.wmyskxz.blog.entity.CategoryInfo(false)
+2018-06-20 18:34:51.203  INFO 15768 --- [restartedMain] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: cn.wmyskxz.blog.entity.CategoryInfo(false)
+2018-06-20 18:34:51.203  INFO 15768 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelDependencies with key cn.wmyskxz.blog.entity.CategoryInfo(false)
+2018-06-20 18:34:51.203  INFO 15768 --- [restartedMain] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.lang.String(true)
+2018-06-20 18:34:51.203  INFO 15768 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache models with key java.lang.String(true)
+2018-06-20 18:34:51.204  INFO 15768 --- [restartedMain] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.lang.String(true)
+2018-06-20 18:34:51.204  INFO 15768 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelDependencies with key java.lang.String(true)
+2018-06-20 18:34:51.204  INFO 15768 --- [restartedMain] s.d.spring.web.OperationsKeyGenerator    : Cache key generated: /admin/category/{id}.cn.wmyskxz.blog.controller.BackController.updateCategoryInfo.DefaultGenericTypeNamingStrategy
+2018-06-20 18:34:51.204  INFO 15768 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache operations with key /admin/category/{id}.cn.wmyskxz.blog.controller.BackController.updateCategoryInfo.DefaultGenericTypeNamingStrategy
+2018-06-20 18:34:51.207  INFO 15768 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method updateCategoryInfo was back-controller
+2018-06-20 18:34:51.209  INFO 15768 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method updateCategoryInfo was back-controller
+2018-06-20 18:34:51.215  INFO 15768 --- [restartedMain] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.lang.String(true)
+2018-06-20 18:34:51.216  INFO 15768 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache models with key java.lang.String(true)
+2018-06-20 18:34:51.216  INFO 15768 --- [restartedMain] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.lang.String(true)
+2018-06-20 18:34:51.216  INFO 15768 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelDependencies with key java.lang.String(true)
+2018-06-20 18:34:51.216  INFO 15768 --- [restartedMain] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: cn.wmyskxz.blog.dto.ArticleCommentDto(false)
+2018-06-20 18:34:51.216  INFO 15768 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache models with key cn.wmyskxz.blog.dto.ArticleCommentDto(false)
+2018-06-20 18:34:51.217  INFO 15768 --- [restartedMain] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: cn.wmyskxz.blog.dto.ArticleCommentDto(false)
+2018-06-20 18:34:51.217  INFO 15768 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelProperties with key cn.wmyskxz.blog.dto.ArticleCommentDto(false)
+2018-06-20 18:34:51.221  INFO 15768 --- [restartedMain] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: cn.wmyskxz.blog.dto.ArticleCommentDto(false)
+2018-06-20 18:34:51.221  INFO 15768 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelDependencies with key cn.wmyskxz.blog.dto.ArticleCommentDto(false)
+2018-06-20 18:34:51.221  INFO 15768 --- [restartedMain] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: cn.wmyskxz.blog.dto.ArticleCommentDto(false)
+2018-06-20 18:34:51.221  INFO 15768 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelProperties with key cn.wmyskxz.blog.dto.ArticleCommentDto(false)
+2018-06-20 18:34:51.221  INFO 15768 --- [restartedMain] s.d.spring.web.OperationsKeyGenerator    : Cache key generated: /api/comment/article/{id}.cn.wmyskxz.blog.controller.ForeController.addArticleComment.DefaultGenericTypeNamingStrategy
+2018-06-20 18:34:51.221  INFO 15768 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache operations with key /api/comment/article/{id}.cn.wmyskxz.blog.controller.ForeController.addArticleComment.DefaultGenericTypeNamingStrategy
+2018-06-20 18:34:51.224  INFO 15768 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method addArticleComment was fore-controller
+2018-06-20 18:34:51.225  INFO 15768 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method addArticleComment was fore-controller
+2018-06-20 18:34:51.230  INFO 15768 --- [restartedMain] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.lang.String(true)
+2018-06-20 18:34:51.231  INFO 15768 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache models with key java.lang.String(true)
+2018-06-20 18:34:51.231  INFO 15768 --- [restartedMain] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.lang.String(true)
+2018-06-20 18:34:51.231  INFO 15768 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelDependencies with key java.lang.String(true)
+2018-06-20 18:34:51.231  INFO 15768 --- [restartedMain] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: cn.wmyskxz.blog.entity.Comment(false)
+2018-06-20 18:34:51.231  INFO 15768 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache models with key cn.wmyskxz.blog.entity.Comment(false)
+2018-06-20 18:34:51.231  INFO 15768 --- [restartedMain] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: cn.wmyskxz.blog.entity.Comment(false)
+2018-06-20 18:34:51.231  INFO 15768 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelProperties with key cn.wmyskxz.blog.entity.Comment(false)
+2018-06-20 18:34:51.233  INFO 15768 --- [restartedMain] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: cn.wmyskxz.blog.entity.Comment(false)
+2018-06-20 18:34:51.233  INFO 15768 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelDependencies with key cn.wmyskxz.blog.entity.Comment(false)
+2018-06-20 18:34:51.233  INFO 15768 --- [restartedMain] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: cn.wmyskxz.blog.entity.Comment(false)
+2018-06-20 18:34:51.233  INFO 15768 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelProperties with key cn.wmyskxz.blog.entity.Comment(false)
+2018-06-20 18:34:51.233  INFO 15768 --- [restartedMain] s.d.spring.web.OperationsKeyGenerator    : Cache key generated: /api/comment.cn.wmyskxz.blog.controller.ForeController.addMessage.DefaultGenericTypeNamingStrategy
+2018-06-20 18:34:51.233  INFO 15768 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache operations with key /api/comment.cn.wmyskxz.blog.controller.ForeController.addMessage.DefaultGenericTypeNamingStrategy
+2018-06-20 18:34:51.235  INFO 15768 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method addMessage was fore-controller
+2018-06-20 18:34:51.237  INFO 15768 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method addMessage was fore-controller
+2018-06-20 18:34:51.238  INFO 15768 --- [restartedMain] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: cn.wmyskxz.blog.dto.ArticleDto(true)
+2018-06-20 18:34:51.238  INFO 15768 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache models with key cn.wmyskxz.blog.dto.ArticleDto(true)
+2018-06-20 18:34:51.239  INFO 15768 --- [restartedMain] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: cn.wmyskxz.blog.dto.ArticleDto(true)
+2018-06-20 18:34:51.239  INFO 15768 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelProperties with key cn.wmyskxz.blog.dto.ArticleDto(true)
+2018-06-20 18:34:51.242  INFO 15768 --- [restartedMain] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: cn.wmyskxz.blog.dto.ArticleDto(true)
+2018-06-20 18:34:51.242  INFO 15768 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelDependencies with key cn.wmyskxz.blog.dto.ArticleDto(true)
+2018-06-20 18:34:51.243  INFO 15768 --- [restartedMain] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: cn.wmyskxz.blog.dto.ArticleDto(true)
+2018-06-20 18:34:51.243  INFO 15768 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelProperties with key cn.wmyskxz.blog.dto.ArticleDto(true)
+2018-06-20 18:34:51.243  INFO 15768 --- [restartedMain] s.d.spring.web.OperationsKeyGenerator    : Cache key generated: /api/article/{id}.cn.wmyskxz.blog.controller.ForeController.getArticleById.DefaultGenericTypeNamingStrategy
+2018-06-20 18:34:51.244  INFO 15768 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache operations with key /api/article/{id}.cn.wmyskxz.blog.controller.ForeController.getArticleById.DefaultGenericTypeNamingStrategy
+2018-06-20 18:34:51.245  INFO 15768 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method getArticleById was fore-controller
+2018-06-20 18:34:51.247  INFO 15768 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method getArticleById was fore-controller
+2018-06-20 18:34:51.249  INFO 15768 --- [restartedMain] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.util.List<cn.wmyskxz.blog.dto.ArticleWithPictureDto>(true)
+2018-06-20 18:34:51.249  INFO 15768 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache models with key java.util.List<cn.wmyskxz.blog.dto.ArticleWithPictureDto>(true)
+2018-06-20 18:34:51.249  INFO 15768 --- [restartedMain] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.util.List<cn.wmyskxz.blog.dto.ArticleWithPictureDto>(true)
+2018-06-20 18:34:51.249  INFO 15768 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelDependencies with key java.util.List<cn.wmyskxz.blog.dto.ArticleWithPictureDto>(true)
+2018-06-20 18:34:51.249  INFO 15768 --- [restartedMain] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: cn.wmyskxz.blog.dto.ArticleWithPictureDto(true)
+2018-06-20 18:34:51.249  INFO 15768 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelProperties with key cn.wmyskxz.blog.dto.ArticleWithPictureDto(true)
+2018-06-20 18:34:51.251  INFO 15768 --- [restartedMain] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: java.util.List<cn.wmyskxz.blog.dto.ArticleWithPictureDto>(true)
+2018-06-20 18:34:51.252  INFO 15768 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelProperties with key java.util.List<cn.wmyskxz.blog.dto.ArticleWithPictureDto>(true)
+2018-06-20 18:34:51.252  INFO 15768 --- [restartedMain] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: cn.wmyskxz.blog.dto.ArticleWithPictureDto(true)
+2018-06-20 18:34:51.252  INFO 15768 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelProperties with key cn.wmyskxz.blog.dto.ArticleWithPictureDto(true)
+2018-06-20 18:34:51.252  INFO 15768 --- [restartedMain] s.d.spring.web.OperationsKeyGenerator    : Cache key generated: /api/article/list.cn.wmyskxz.blog.controller.ForeController.listAllArticleInfo.DefaultGenericTypeNamingStrategy
+2018-06-20 18:34:51.252  INFO 15768 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache operations with key /api/article/list.cn.wmyskxz.blog.controller.ForeController.listAllArticleInfo.DefaultGenericTypeNamingStrategy
+2018-06-20 18:34:51.253  INFO 15768 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method listAllArticleInfo was fore-controller
+2018-06-20 18:34:51.254  INFO 15768 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method listAllArticleInfo was fore-controller
+2018-06-20 18:34:51.256  INFO 15768 --- [restartedMain] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.util.List<cn.wmyskxz.blog.entity.CategoryInfo>(true)
+2018-06-20 18:34:51.256  INFO 15768 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache models with key java.util.List<cn.wmyskxz.blog.entity.CategoryInfo>(true)
+2018-06-20 18:34:51.256  INFO 15768 --- [restartedMain] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.util.List<cn.wmyskxz.blog.entity.CategoryInfo>(true)
+2018-06-20 18:34:51.256  INFO 15768 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelDependencies with key java.util.List<cn.wmyskxz.blog.entity.CategoryInfo>(true)
+2018-06-20 18:34:51.256  INFO 15768 --- [restartedMain] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: cn.wmyskxz.blog.entity.CategoryInfo(true)
+2018-06-20 18:34:51.256  INFO 15768 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelProperties with key cn.wmyskxz.blog.entity.CategoryInfo(true)
+2018-06-20 18:34:51.256  INFO 15768 --- [restartedMain] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: java.util.List<cn.wmyskxz.blog.entity.CategoryInfo>(true)
+2018-06-20 18:34:51.256  INFO 15768 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelProperties with key java.util.List<cn.wmyskxz.blog.entity.CategoryInfo>(true)
+2018-06-20 18:34:51.257  INFO 15768 --- [restartedMain] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: cn.wmyskxz.blog.entity.CategoryInfo(true)
+2018-06-20 18:34:51.257  INFO 15768 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelProperties with key cn.wmyskxz.blog.entity.CategoryInfo(true)
+2018-06-20 18:34:51.257  INFO 15768 --- [restartedMain] s.d.spring.web.OperationsKeyGenerator    : Cache key generated: /api/category/list.cn.wmyskxz.blog.controller.ForeController.listAllCategoryInfo.DefaultGenericTypeNamingStrategy
+2018-06-20 18:34:51.257  INFO 15768 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache operations with key /api/category/list.cn.wmyskxz.blog.controller.ForeController.listAllCategoryInfo.DefaultGenericTypeNamingStrategy
+2018-06-20 18:34:51.258  INFO 15768 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method listAllCategoryInfo was fore-controller
+2018-06-20 18:34:51.259  INFO 15768 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method listAllCategoryInfo was fore-controller
+2018-06-20 18:34:51.261  INFO 15768 --- [restartedMain] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.util.List<cn.wmyskxz.blog.entity.Comment>(true)
+2018-06-20 18:34:51.262  INFO 15768 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache models with key java.util.List<cn.wmyskxz.blog.entity.Comment>(true)
+2018-06-20 18:34:51.262  INFO 15768 --- [restartedMain] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.util.List<cn.wmyskxz.blog.entity.Comment>(true)
+2018-06-20 18:34:51.262  INFO 15768 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelDependencies with key java.util.List<cn.wmyskxz.blog.entity.Comment>(true)
+2018-06-20 18:34:51.263  INFO 15768 --- [restartedMain] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: cn.wmyskxz.blog.entity.Comment(true)
+2018-06-20 18:34:51.263  INFO 15768 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelProperties with key cn.wmyskxz.blog.entity.Comment(true)
+2018-06-20 18:34:51.263  INFO 15768 --- [restartedMain] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: java.util.List<cn.wmyskxz.blog.entity.Comment>(true)
+2018-06-20 18:34:51.263  INFO 15768 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelProperties with key java.util.List<cn.wmyskxz.blog.entity.Comment>(true)
+2018-06-20 18:34:51.263  INFO 15768 --- [restartedMain] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: cn.wmyskxz.blog.entity.Comment(true)
+2018-06-20 18:34:51.263  INFO 15768 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelProperties with key cn.wmyskxz.blog.entity.Comment(true)
+2018-06-20 18:34:51.264  INFO 15768 --- [restartedMain] s.d.spring.web.OperationsKeyGenerator    : Cache key generated: /api/comment/list.cn.wmyskxz.blog.controller.ForeController.listAllComment.DefaultGenericTypeNamingStrategy
+2018-06-20 18:34:51.264  INFO 15768 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache operations with key /api/comment/list.cn.wmyskxz.blog.controller.ForeController.listAllComment.DefaultGenericTypeNamingStrategy
+2018-06-20 18:34:51.265  INFO 15768 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method listAllComment was fore-controller
+2018-06-20 18:34:51.266  INFO 15768 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method listAllComment was fore-controller
+2018-06-20 18:34:51.267  INFO 15768 --- [restartedMain] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.util.List<cn.wmyskxz.blog.dto.ArticleWithPictureDto>(true)
+2018-06-20 18:34:51.267  INFO 15768 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache models with key java.util.List<cn.wmyskxz.blog.dto.ArticleWithPictureDto>(true)
+2018-06-20 18:34:51.268  INFO 15768 --- [restartedMain] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.util.List<cn.wmyskxz.blog.dto.ArticleWithPictureDto>(true)
+2018-06-20 18:34:51.268  INFO 15768 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelDependencies with key java.util.List<cn.wmyskxz.blog.dto.ArticleWithPictureDto>(true)
+2018-06-20 18:34:51.268  INFO 15768 --- [restartedMain] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: cn.wmyskxz.blog.dto.ArticleWithPictureDto(true)
+2018-06-20 18:34:51.268  INFO 15768 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelProperties with key cn.wmyskxz.blog.dto.ArticleWithPictureDto(true)
+2018-06-20 18:34:51.268  INFO 15768 --- [restartedMain] s.d.spring.web.OperationsKeyGenerator    : Cache key generated: /api/article/list/sort/{id}.cn.wmyskxz.blog.controller.ForeController.listArticleInfo.DefaultGenericTypeNamingStrategy
+2018-06-20 18:34:51.268  INFO 15768 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache operations with key /api/article/list/sort/{id}.cn.wmyskxz.blog.controller.ForeController.listArticleInfo.DefaultGenericTypeNamingStrategy
+2018-06-20 18:34:51.270  INFO 15768 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method listArticleInfo was fore-controller
+2018-06-20 18:34:51.271  INFO 15768 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method listArticleInfo was fore-controller
+2018-06-20 18:34:51.273  INFO 15768 --- [restartedMain] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.util.List<cn.wmyskxz.blog.dto.ArticleWithPictureDto>(true)
+2018-06-20 18:34:51.273  INFO 15768 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache models with key java.util.List<cn.wmyskxz.blog.dto.ArticleWithPictureDto>(true)
+2018-06-20 18:34:51.273  INFO 15768 --- [restartedMain] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.util.List<cn.wmyskxz.blog.dto.ArticleWithPictureDto>(true)
+2018-06-20 18:34:51.273  INFO 15768 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelDependencies with key java.util.List<cn.wmyskxz.blog.dto.ArticleWithPictureDto>(true)
+2018-06-20 18:34:51.273  INFO 15768 --- [restartedMain] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: cn.wmyskxz.blog.dto.ArticleWithPictureDto(true)
+2018-06-20 18:34:51.273  INFO 15768 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelProperties with key cn.wmyskxz.blog.dto.ArticleWithPictureDto(true)
+2018-06-20 18:34:51.274  INFO 15768 --- [restartedMain] s.d.spring.web.OperationsKeyGenerator    : Cache key generated: /api/article/list/lastest.cn.wmyskxz.blog.controller.ForeController.listLastestArticle.DefaultGenericTypeNamingStrategy
+2018-06-20 18:34:51.274  INFO 15768 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache operations with key /api/article/list/lastest.cn.wmyskxz.blog.controller.ForeController.listLastestArticle.DefaultGenericTypeNamingStrategy
+2018-06-20 18:34:51.275  INFO 15768 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method listLastestArticle was fore-controller
+2018-06-20 18:34:51.276  INFO 15768 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method listLastestArticle was fore-controller
+2018-06-20 18:34:51.278  INFO 15768 --- [restartedMain] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.util.List<cn.wmyskxz.blog.dto.ArticleCommentDto>(true)
+2018-06-20 18:34:51.278  INFO 15768 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache models with key java.util.List<cn.wmyskxz.blog.dto.ArticleCommentDto>(true)
+2018-06-20 18:34:51.279  INFO 15768 --- [restartedMain] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.util.List<cn.wmyskxz.blog.dto.ArticleCommentDto>(true)
+2018-06-20 18:34:51.279  INFO 15768 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelDependencies with key java.util.List<cn.wmyskxz.blog.dto.ArticleCommentDto>(true)
+2018-06-20 18:34:51.279  INFO 15768 --- [restartedMain] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: cn.wmyskxz.blog.dto.ArticleCommentDto(true)
+2018-06-20 18:34:51.279  INFO 15768 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelProperties with key cn.wmyskxz.blog.dto.ArticleCommentDto(true)
+2018-06-20 18:34:51.280  INFO 15768 --- [restartedMain] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: java.util.List<cn.wmyskxz.blog.dto.ArticleCommentDto>(true)
+2018-06-20 18:34:51.280  INFO 15768 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelProperties with key java.util.List<cn.wmyskxz.blog.dto.ArticleCommentDto>(true)
+2018-06-20 18:34:51.281  INFO 15768 --- [restartedMain] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: cn.wmyskxz.blog.dto.ArticleCommentDto(true)
+2018-06-20 18:34:51.281  INFO 15768 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelProperties with key cn.wmyskxz.blog.dto.ArticleCommentDto(true)
+2018-06-20 18:34:51.281  INFO 15768 --- [restartedMain] s.d.spring.web.OperationsKeyGenerator    : Cache key generated: /api/comment/article/{id}.cn.wmyskxz.blog.controller.ForeController.listMessageByArticleId.DefaultGenericTypeNamingStrategy
+2018-06-20 18:34:51.281  INFO 15768 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache operations with key /api/comment/article/{id}.cn.wmyskxz.blog.controller.ForeController.listMessageByArticleId.DefaultGenericTypeNamingStrategy
+2018-06-20 18:34:51.284  INFO 15768 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method listMessageByArticleId was fore-controller
+2018-06-20 18:34:51.285  INFO 15768 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method listMessageByArticleId was fore-controller
+2018-06-20 18:34:51.295  INFO 15768 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2018-06-20 18:34:51.297  INFO 15768 --- [restartedMain] cn.wmyskxz.blog.BlogApplication          : Started BlogApplication in 2.522 seconds (JVM running for 67.148)
+2018-06-20 18:34:51.302  INFO 15768 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2018-06-20 18:35:29.745  INFO 15768 --- [Thread-38] ConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@67d35021: startup date [Wed Jun 20 18:34:48 CST 2018]; root of context hierarchy
+2018-06-20 18:35:29.749  INFO 15768 --- [Thread-38] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-06-20 18:35:29.749  INFO 15768 --- [Thread-38] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2018-06-20 18:35:29.759  INFO 15768 --- [Thread-38] com.alibaba.druid.pool.DruidDataSource   : {dataSource-2} closed

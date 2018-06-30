@@ -1,0 +1,86 @@
+#titu {
+    width: 100%;
+}
+
+#content {
+    width: 60%;
+    margin: 0 auto 5px auto;
+}
+
+/*.comment {
+    margin-top: 60px;
+}*/
+
+.commentList {
+    border-top: 2px rgb(231, 231, 231) solid;
+    /*padding-top: 10px;*/
+    /*margin-top: 60px;*/
+    margin-bottom: 20px;
+}
+
+.commentName {
+    padding-top: 10px;
+}
+
+.commentTime {
+    padding-top: 10px;
+    float: right;
+}
+
+.commentContent {
+    margin-top: 5px;
+}
+
+.comment {
+    padding-bottom: 5px;
+    border-bottom: 2px rgb(231, 231, 231) dashed;
+}
+
+/* 关于信息 */
+
+.aboutInfo {
+    margin-top: 30px;
+    height: 400px;
+    width: auto;
+    margin-bottom: 60px;
+}
+
+.aboutInfo .leftInfo {
+    float: left;
+    width: 30%;
+}
+
+.aboutInfo .leftInfo img {
+    width: 100%;
+    border-radius: 6px !important;
+}
+
+.aboutInfo .leftInfo h2 {
+    font-weight: bold;
+}
+
+.aboutInfo .leftInfo h4 {
+    color: #666;
+}
+
+.aboutInfo .rightInfo {
+    float: right;
+    width: 70%;
+}
+
+.aboutArticle {
+    border: 1px #D1D5DA solid;
+    margin: 8px 0px 8px 20px;
+    padding: 15px;
+}
+
+.rightInfo .title {
+    font-size: 20px;
+    color: #0366d6;
+    margin-bottom: 5px;
+}
+
+.rightInfo h2 {
+    top: 0;
+    margin-left: 20px;
+}

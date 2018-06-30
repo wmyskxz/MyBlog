@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8"/>
+    <title>wmyskxz个人博客</title>
+
+    <!-- 引入 JQ 和 Bootstrap -->
+    <script src="js/jquery/2.0.0/jquery.min.js"></script>
+    <link href="css/bootstrap/3.3.6/bootstrap.min.css" rel="stylesheet">
+    <script src="js/bootstrap/3.3.6/bootstrap.min.js"></script>
+    <!-- 引入自己的CSS -->
+    <link href="css/about.css" rel="stylesheet"/>
+</head>
+
+<body>
+
+<!--引入头部-->
+<script language="javascript" type="text/javascript" src="js/header.js"></script>
+<!--题图-->
+<img id="titu" src="img/about/titu.jpg"/>
+<!--主体内容-->
+<div id="content">
+
+    <!-- 关于信息 -->
+    <div class="aboutInfo">
+        <div class="leftInfo">
+            <img src="img/head.jpg">
+            <h2>我没有三颗心脏</h2>
+            <h4>wmyskxz</h4>
+            <h4>AB型摩羯it男爱文艺爱音乐</h4>
+        </div>
+        <div class="rightInfo">
+            <h2>博客搭建流程：</h2>
+            <div class="aboutArticle">
+                <div class="title">
+                    <a href="https://www.jianshu.com/p/0293368fe750">SpringBoot技术栈搭建个人博客【项目准备】</a>
+                </div>
+                <div class="summary">
+                    项目准备包括需求分析、数据库设计、原型设计、项目搭建、RESTful APIs设计
+                </div>
+            </div>
+            <div class="aboutArticle">
+                <div class="title">
+                    <a href="https://www.jianshu.com/p/91c6c9fc67c4">SpringBoot技术栈搭建个人博客【后台开发】</a>
+                </div>
+                <div class="summary">
+                    按照设计的RESTful APIs进行后台开发，并实现日志记录/统计/权限等功能
+                </div>
+            </div>
+            <div class="aboutArticle">
+                <div class="title">
+                    <a href="https://www.jianshu.com/p/c66541e59249">SpringBoot技术栈搭建个人博客【前台开发/项目总结】</a>
+                </div>
+                <div class="summary">
+                    前后端结合以及项目总结
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /. END ABOUT INFO -->
+
+    <!--留言区-->
+    <div style="margin-top: 60px;">
+        <label>留言列表：</label>
+    </div>
+    <div id="commentList" class="commentList">
+    </div>
+    <!-- /. END COMMENT LIST -->
+
+    <!--新增留言-->
+    <div class="comment">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                新增留言
+            </div>
+            <div class="panel-body">
+                <label>名称：</label>
+                <input id="commentName" class="form-control"/>
+                <label>Email：</label>
+                <input id="commentEmail" class="form-control">
+                <label>评论内容：</label>
+                <textarea id="commentContent" rows="3" class="form-control"></textarea><br/>
+                <div class="text-right">
+                    <button id="addComment" class="btn btn-success">确认添加</button>
+                </div>
+            </div>
+            <!-- /. END PANEL-BODY -->
+        </div>
+        <!-- /. END PANEL -->
+    </div>
+    <!-- /. END COMMENT -->
+</div>
+
+<!-- 引入尾部 -->
+<script language="javascript" type="text/javascript" src="js/footer.js"></script>
+<!-- 引入自己的JS -->
+<script src="js/about.js"></script>
+</body>
+
+</html>

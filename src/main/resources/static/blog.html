@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>wmyskxz个人博客</title>
+
+		<!-- 引入 JQ 和 Bootstrap -->
+		<script src="js/jquery/2.0.0/jquery.min.js"></script>
+		<link href="css/bootstrap/3.3.6/bootstrap.min.css" rel="stylesheet">
+		<script src="js/bootstrap/3.3.6/bootstrap.min.js"></script>
+		<!--引入自己的CSS-->
+		<link href="css/blog.css" rel="stylesheet">
+	
+	</head>
+
+	<body>
+
+		<!--引入头部-->
+		<script language="javascript" type="text/javascript" src="js/header.js"></script>
+
+		<div style="clear: both;"></div>
+		<!--中间的内容-->
+		<div id="content">
+			<div id="category">
+				<a href="?">全部</a>
+				<template id="categoryInfo">
+					<div class="categoryInfo">
+						<a id="categoryName" href=""></a>
+					</div>
+				</template>
+			</div>
+
+			<div id="articleInfos">
+				<template id="articleInfo">
+					<div class="articleInfo" onclick="showArticle(this)">
+						<div class="articlePicture">
+							<img src="">
+						</div>
+						<div class="articleTitle">
+							<h5 id="articleTitle"></h5>
+						</div>
+						<h6 style="display: none;"></h6>
+					</div>
+				</template>
+			</div>
+		</div>
+		<!--引入尾部-->
+		<script language="javascript" type="text/javascript" src="js/footer.js"></script>
+
+	</body>
+	<!--引入blog的相关js-->
+	<script language="javascript" type="text/javascript" src="js/blog.js"></script>
+
+</html>

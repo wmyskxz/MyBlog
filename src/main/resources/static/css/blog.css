@@ -1,0 +1,53 @@
+#content {
+	margin-top: 60px;
+	min-height: 640px;
+}
+
+#category {
+	width: 25%;
+	float: left;
+	text-align: right;
+	font-size: 16px;
+}
+
+#category a {
+	display: block;
+	color: #000000;
+	padding-bottom: 15px;
+}
+
+#category a:hover {
+	font-size: 18px;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+#articleInfos {
+	width: 60%;
+	padding-left: 140px;
+	overflow: hidden;
+	display: block;
+}
+
+.articleInfo {
+	width: 180px;
+	float: left;
+	margin: 0px 30px 30px 30px;
+	/*padding: 3px;*/
+}
+
+.articleInfo:hover {
+	cursor: pointer;
+	/*padding: 0px;*/
+	/*border: 3px #000000 solid;*/
+}
+
+.articleInfo img {
+	object-fit: cover;
+	height: 180px;
+	width: 180px;
+}
+
+.articleTitle{
+	width: 180px;
+}
