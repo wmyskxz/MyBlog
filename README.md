@@ -9,3 +9,5 @@
 - [3.SpringBoot技术栈搭建个人博客【前台开发/项目总结】](https://www.jianshu.com/p/c66541e59249)
 
 前端原型参考：[戳这里](https://www.zcool.com.cn/work/ZMjgzMjE1ODA=.html)
+
+![](https://upload-images.jianshu.io/upload_images/7896890-8f7f25a8328d2372.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1000/format/webp)
